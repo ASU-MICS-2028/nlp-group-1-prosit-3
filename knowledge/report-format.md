@@ -40,4 +40,4 @@ Source: [ACL formatting guidelines](https://acl-org.github.io/ACLPUB/formatting.
 - The GitHub link goes on **page 1** of the report (and on slide 1).
 - The report must make a scholarly case: RNNs or an alternative, with reasons and evidence, then show how we built and evaluated our recommendation.
 
-Related: [[assignment]], [[citations]]
+Related: [[prosit-3-brief]], [[cite-claims-not-general-knowledge]], [[team-agrees-on-one-recommendation]]
