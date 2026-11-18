@@ -2,9 +2,15 @@
 name = "nlp-group-1-prosit-3"
 version = "0.1.0"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "jiwer>=4.0.0",
+]
 
 [dependency-groups]
 dev = [
     "pytest>=9.2.0",
 ]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+markers = ["network: needs HF_TOKEN and downloads data"]
