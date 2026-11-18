@@ -1,0 +1,14 @@
+name: Checks
+on: [push, pull_request]
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - name: No keys, .env, audio or model files
+        run: python3 scripts/check_secrets.py --all
+      - name: Indexes are current
+        run: python3 scripts/build_indexes.py --check
+      - name: Tests
+        run: uv run pytest -q
