@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "deny": [
+      "Read(./.env)",
+      "Edit(./.env)",
+      "Bash(cat .env*)",
+      "Bash(less .env*)",
+      "Bash(head .env*)",
+      "Bash(tail .env*)",
+      "Bash(grep * .env*)",
+      "Bash(git add -f*)",
+      "Bash(git push --force*)",
+      "Bash(git push -f*)"
+    ],
+    "allow": [
+      "Bash(uv sync*)",
+      "Bash(uv run pytest*)",
+      "Bash(git status*)",
+      "Bash(git diff*)",
+      "Bash(git log*)",
+      "Bash(git branch*)",
+      "Bash(python3 scripts/build_indexes.py*)",
+      "Bash(uv run python -m common.*)",
+      "Bash(gh issue view*)",
+      "Bash(gh issue list*)"
+    ]
+  }
+}
