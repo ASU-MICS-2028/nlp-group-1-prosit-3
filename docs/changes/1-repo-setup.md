@@ -2,7 +2,7 @@
 title: Repo setup - guards, generated indexes, workflow templates, skills, decisions 0001-0008
 owner: Joseph Etse
 issue: "#1"
-pr: "see PR"
+pr: "#18"
 ai-use: Claude Code wrote the scaffold, scripts, templates and skills from Joseph's design; Joseph reviewed them
 ---
 
