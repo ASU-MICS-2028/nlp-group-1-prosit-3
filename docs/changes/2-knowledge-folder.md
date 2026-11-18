@@ -2,7 +2,7 @@
 title: Knowledge folder - lectures 1-12, prosits, course, 61 atomic notes
 owner: Joseph Etse
 issue: "#2"
-pr: "see PR"
+pr: "#19"
 ai-use: Claude Code summarised lectures 9-12 from the transcripts and wrote the atomic notes; Joseph reviewed samples. Lectures 1-8 were carried over from Prosit 2
 ---
 
