@@ -7,6 +7,13 @@ data/
 checkpoints/
 wandb/
 *.wav
+*.WAV
+*.mp3
+*.flac
+*.ogg
+*.opus
+*.m4a
+*.webm
 *.tar.gz
 CLAUDE.local.md
 .claude/settings.local.json
