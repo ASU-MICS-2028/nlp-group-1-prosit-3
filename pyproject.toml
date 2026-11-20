@@ -3,7 +3,10 @@ name = "nlp-group-1-prosit-3"
 version = "0.1.0"
 requires-python = ">=3.12"
 dependencies = [
+    "huggingface-hub>=2.4.0",
     "jiwer>=4.0.0",
+    "librosa>=1.0.1",
+    "pyarrow>=26.0.1",
 ]
 
 [dependency-groups]
@@ -13,4 +16,5 @@ dev = [
 
 [tool.pytest.ini_options]
 pythonpath = ["."]
-markers = ["network: needs HF_TOKEN and downloads data"]
+markers = ["network: downloads the test audio (about 6 GB, once); run with: uv run pytest -m network"]
+addopts = "-m 'not network'"
