@@ -2,7 +2,7 @@
 title: S0 - fixed 1,000-clip test set, audio access and shared scorer
 owner: Joseph Etse
 issue: "#3"
-pr: "#TBD"
+pr: "#20"
 ai-use: Claude Code wrote common/ and its tests from the approved plan and ran the checks; Joseph chose the public dataset copy and reviews the PR
 ---
 
