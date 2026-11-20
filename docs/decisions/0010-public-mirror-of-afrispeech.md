@@ -31,7 +31,7 @@ The official dataset, `intronhealth/afrispeech-200`, is gated. We requested acce
 
 Use the copy, pinned to revision `cafdc16d1e1dcfcd2b599c00b1ea44d5624db08f`, through `common/data.py`. This adds `pyarrow` to the dependencies in decision 0008.
 
-**This decision stays Proposed until the instructor approves.** If he says no, we wait for official access. `common/data.py` would then switch to the official files, and only `common/test_set.csv` and this decision change.
+**This decision stays Proposed until the instructor approves.** If he says no, we wait for official access. `common/data.py` (`REPO`, `REVISION` and how the audio is read) would then switch to the official files, `common/test_set.csv` would be checked against them, and a new decision would supersede this one.
 
 ## Consequences
 

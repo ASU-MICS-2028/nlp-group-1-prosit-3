@@ -29,6 +29,26 @@ def test_normalize():
     assert normalize("  B.P.  was HIGH!! ") == "b p was high"
 
 
+def test_normalize_unicode():
+    assert normalize("The patient\u2019s chart") == normalize("the patient's chart") == "the patient's chart"
+    assert normalize("cafe\u0301") == normalize("caf\u00e9")
+
+
+def test_reads_excel_bom(tmp_path):
+    test = write_test_set(tmp_path / "t.csv", [("fever", "clinical", "yoruba")])
+    preds = tmp_path / "p.csv"
+    preds.write_text("audio_id,hypothesis\na0,fever\n", encoding="utf-8-sig")
+    assert score(preds, test)["overall"]["wer"] == 0.0
+
+
+def test_missing_hypothesis_column_is_explained(tmp_path):
+    test = write_test_set(tmp_path / "t.csv", [("fever", "clinical", "yoruba")])
+    preds = tmp_path / "p.csv"
+    preds.write_text("audio_id,text\na0,fever\n")
+    with pytest.raises(ValueError, match="audio_id,hypothesis"):
+        score(preds, test)
+
+
 def test_perfect_score(tmp_path):
     t = write_test_set(tmp_path / "t.csv", [("The patient has fever .", "clinical", "yoruba")])
     p = write_predictions(tmp_path / "p.csv", [("a0", "the patient has fever")])

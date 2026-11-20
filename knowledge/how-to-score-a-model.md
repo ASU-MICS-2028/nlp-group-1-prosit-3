@@ -20,7 +20,7 @@ from common.data import fetch_test_audio, load_audio, load_test_set
 out = Path("eval/results/m3-whisper-small-zeroshot")  # one folder per run
 out.mkdir(parents=True, exist_ok=True)
 paths = fetch_test_audio()            # first call writes 1,000 WAVs under data/ (about 6 GB download, once)
-with open(out / "predictions.csv", "w", newline="") as f:
+with open(out / "predictions.csv", "w", newline="", encoding="utf-8") as f:
     w = csv.writer(f)
     w.writerow(["audio_id", "hypothesis"])
     for row in load_test_set():

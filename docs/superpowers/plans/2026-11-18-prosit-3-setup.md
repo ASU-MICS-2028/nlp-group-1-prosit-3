@@ -194,7 +194,7 @@ GitHub numbers issues and PRs from the same counter. Creating all 17 issues befo
 **Files:**
 - Create in `knowledge/sources/` (frontmatter `title, source, author, ai-use`):
   - `lecture-01.md` … `lecture-08.md`, copied from `../nlp-group-1-prosit-2/knowledge/lectures/` with frontmatter added. Their "Relevance to Prosit 2" sections stay as they are.
-  - `lecture-09.md` … `lecture-12.md`, newly summarised with the `summarize-transcript` skill from `~/Library/CloudStorage/OneDrive-Personal/KB/ashesi/notes/Natural Language Processing/Lectures/Lecture N.md`.
+  - `lecture-09.md` … `lecture-12.md`, newly summarised with the `summarize-transcript` skill from the lecture transcripts (kept off the repo).
   - `prosit-1.md`, from P2's `knowledge/prosit-1.md`.
   - `prosit-2.md`, new: what we built, the key numbers (taken from P2's README "Results at a glance") and the process lessons.
   - `course.md`, from P2's `knowledge/course.md`, with the out-of-date Prosit 3 dates marked as such.

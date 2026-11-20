@@ -35,7 +35,7 @@ def read_split(split: str, columns: list[str]) -> list[dict]:
 
 
 def load_test_set(path: Path = TEST_SET) -> list[dict]:
-    with open(path, newline="") as f:
+    with open(path, newline="", encoding="utf-8") as f:
         return list(csv.DictReader(f))
 
 

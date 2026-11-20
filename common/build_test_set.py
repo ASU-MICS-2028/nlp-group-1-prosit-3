@@ -22,7 +22,7 @@ def main() -> None:
         pool = sorted((r for r in rows if r["domain"] == domain), key=lambda r: r["audio_id"])
         chosen += rng.sample(pool, PER_DOMAIN)
     chosen.sort(key=lambda r: r["audio_id"])
-    with open(TEST_SET, "w", newline="") as f:
+    with open(TEST_SET, "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, COLUMNS)
         w.writeheader()
         for r in chosen:

@@ -10,6 +10,7 @@ import csv
 import json
 import re
 import sys
+import unicodedata
 from collections import Counter
 from pathlib import Path
 
@@ -20,6 +21,7 @@ MIN_ACCENT_CLIPS = 30  # smaller accents give noisy WER (decision 0009)
 
 
 def normalize(text: str) -> str:
+    text = unicodedata.normalize("NFKC", text).replace("\u2019", "'").replace("\u2018", "'").replace("\u02bc", "'")
     text = re.sub(r"[^\w' ]|_", " ", text.lower())  # keep letters, digits, apostrophes
     text = " ".join(text.split())
     return re.sub(r"(\d) s\b", r"\1s", text)  # AfriSpeech writes "50s" as "50 s"
@@ -31,10 +33,13 @@ def _wer_cer(refs: list[str], hyps: list[str]) -> dict:
 
 
 def score(predictions_csv: Path, test_csv: Path = TEST_SET) -> dict:
-    with open(test_csv, newline="") as f:
+    with open(test_csv, newline="", encoding="utf-8") as f:
         test = {row["audio_id"]: row for row in csv.DictReader(f)}
-    with open(predictions_csv, newline="") as f:
-        preds = list(csv.DictReader(f))
+    with open(predictions_csv, newline="", encoding="utf-8-sig") as f:  # -sig: Excel's "CSV UTF-8" adds a BOM
+        reader = csv.DictReader(f)
+        if not {"audio_id", "hypothesis"} <= set(reader.fieldnames or []):
+            raise ValueError(f"{predictions_csv} needs columns audio_id,hypothesis; found {reader.fieldnames}")
+        preds = list(reader)
 
     ids = [p["audio_id"] for p in preds]
     duplicates = sorted(i for i, n in Counter(ids).items() if n > 1)
