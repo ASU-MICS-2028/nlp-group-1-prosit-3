@@ -6,3 +6,6 @@ What we found while building, **one finding per file**: what was compared, the n
 
 | Title | tags | author |
 |---|---|---|
+| [Some AfriSpeech references contain text the speaker never said (page headers, glued words)](some-references-contain-text-nobody-said.md) | [data, scoring] | Joseph Etse |
+| [Speakers dictate punctuation ("comma", "full stop") in a third of the clips, and the references write the marks instead](whisper-writes-spoken-punctuation-as-words.md) | [M3, data, scoring, dictation] | Joseph Etse |
+| [Zero-shot Whisper gets stuck repeating itself on about 5% of clips, and that alone adds about 15 WER points](whisper-zero-shot-loops-on-hard-clips.md) | [M3, whisper, decoding] | Joseph Etse |
