@@ -17,3 +17,4 @@ Numbered decision records (ADRs). Never edit a decision away: write a new one an
 | [One fixed 1,000-clip test set, one scorer, one predictions format; checkpoints off the repo](0009-test-set-predictions-and-checkpoints.md) | Accepted | 2026-11-20 |
 | [Use the public copy evie-8/afrispeech-200 while official access is pending](0010-public-mirror-of-afrispeech.md) | Proposed | 2026-11-20 |
 | [torch and transformers for the transformer models](0011-torch-and-transformers.md) | Accepted | 2026-11-23 |
+| [Train on Kaggle's free T4 GPUs, with logs saved as proof](0012-kaggle-free-gpus.md) | Accepted | 2026-11-23 |

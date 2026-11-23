@@ -17,7 +17,7 @@ Measure how well Whisper transcribes AfriSpeech **with no training** (zero-shot)
 1. Zero-shot `whisper-small` on the test set, on the Mac (MPS). Save in `eval/results/m3-whisper-small-zeroshot/`.
 2. Zero-shot one larger model (`whisper-large-v3-turbo`) if it runs at a sane speed, so we know how much size alone buys.
 3. Write the fine-tuning script and test it on a few hundred dev clips locally (a few steps only, checking that the loss goes down).
-4. Full fine-tune `whisper-small` on the shared GPU, on the train split, choosing checkpoints on dev.
+4. Full fine-tune `whisper-small` on Kaggle (`models/whisper_full/kaggle_finetune.ipynb`, steps in `knowledge/how-to-train-on-kaggle.md`), on the train split, choosing checkpoints on dev.
 5. Score, write the learnings, draft the Section B subsection and the slide segment.
 
 ## Alternatives to compare
@@ -35,12 +35,12 @@ Measure how well Whisper transcribes AfriSpeech **with no training** (zero-shot)
 
 ## GPU cost estimate
 
-Zero-shot: none (Mac). Full fine-tune of `whisper-small`: one GPU of about 24 GB, about 3–5 hours, roughly 3–10 USD, depending on the provider (decision 0005, pending).
+Zero-shot: none (Mac). Full fine-tune of `whisper-small`: Kaggle's free T4 (decision 0012), about 6–10 GPU hours of the 30-hour weekly quota, 0 USD. Batch 8 × accumulate 2, 14 of the 28 train files. On a rented L4, A10 or A100 it would be 2–5 hours and 2–5 USD.
 
 ## Done when
 
 - `eval/results/<run>/predictions.csv` and `run.md` exist for every run reported, and `scores.json` was produced by `uv run python -m common.score`
 - Learnings written in `learnings/`, one finding per file, including the options that lost
 - Section B subsection drafted and the slide segment added
-- Every GPU run logged in `docs/gpu-log.md`
+- Every GPU run logged in `docs/gpu-log.md`, with `train.log`, `train_log.csv` and the environment files committed as proof
 - Change file in `docs/changes/` and PR merged

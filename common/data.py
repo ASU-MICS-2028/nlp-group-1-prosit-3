@@ -16,17 +16,25 @@ from pathlib import Path
 import librosa
 import numpy as np
 import pyarrow.parquet as pq
-from huggingface_hub import snapshot_download
+from huggingface_hub import list_repo_files, snapshot_download
 
 REPO = "evie-8/afrispeech-200"
 REVISION = "cafdc16d1e1dcfcd2b599c00b1ea44d5624db08f"
 TEST_SET = Path(__file__).with_name("test_set.csv")
 
 
-def split_files(split: str) -> list[str]:
-    """Download (once, into the Hugging Face cache) and return the parquet files of one split."""
-    root = snapshot_download(REPO, repo_type="dataset", revision=REVISION, allow_patterns=[f"data/{split}-*"])
-    return sorted(glob.glob(f"{root}/data/{split}-*.parquet"))
+def split_files(split: str, limit: int | None = None) -> list[str]:
+    """Download (once, into the Hugging Face cache) and return the parquet files of one split.
+
+    limit keeps only the first N files (train is 28 files, about 2 GB each), for machines with little disk.
+    """
+    patterns = [f"data/{split}-*"]
+    if limit:
+        names = sorted(n for n in list_repo_files(REPO, repo_type="dataset", revision=REVISION)
+                       if n.startswith(f"data/{split}-"))
+        patterns = names[:limit]
+    root = snapshot_download(REPO, repo_type="dataset", revision=REVISION, allow_patterns=patterns)
+    return sorted(glob.glob(f"{root}/data/{split}-*.parquet"))[:limit]  # the cache may hold more from earlier
 
 
 def read_split(split: str, columns: list[str]) -> list[dict]:
