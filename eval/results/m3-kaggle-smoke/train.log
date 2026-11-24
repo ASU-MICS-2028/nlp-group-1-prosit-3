@@ -1,0 +1,9 @@
+=== session start 2026-11-24T00:48:38+00:00 on cuda: Tesla T4 (16 GB), commit ca0ef7a, fresh start
+settings: {'model': 'openai/whisper-small', 'train_split': 'train', 'train_files': 1, 'steps': 20, 'batch': 8, 'accumulate': 2, 'lr': 1e-05, 'warmup': 500, 'eval_every': 10, 'eval_clips': 10, 'max_hours': None, 'name': 'kaggle-smoke', 'seed': 42}
+step 10  dev WER 0.355 on 10 clips
+  saved best to checkpoints/kaggle-smoke/best
+step 10  loss 1.206  lr 2.20e-07  68s
+step 20  dev WER 0.325 on 10 clips
+  saved best to checkpoints/kaggle-smoke/best
+step 20  loss 1.334  lr 0.00e+00  97s
+=== done: step 20, 106s this session; best dev WER 0.325; checkpoint checkpoints/kaggle-smoke/best

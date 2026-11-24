@@ -30,11 +30,10 @@ How we run it:
 - `finetune.py` saves its state every 500 steps and stops after `--max-hours`, so a run can span sessions.
 - It writes `train.log`, `train_log.csv` and an environment file per session into `eval/results/<run>/`. Those files, plus the Kaggle version URL, are the proof that gets committed.
 - whisper-small uses batch 8 × accumulate 2 (effective batch 16) on 16 GB.
-- It uses 14 of the 28 train files, about 29,000 clips, because of disk space.
+- It uses all 28 train files. The trial run showed 2.5 TB of free disk on `/`, so the 14-file limit planned at first is not needed.
 
 ## Consequences
 
 - Costs 0 USD. Each `docs/gpu-log.md` row still records the hours.
-- About 6–10 hours per whisper-small run, against 2–5 on a rented GPU.
+- About 4 hours per whisper-small run, measured at about 2.5 s per step in the trial (`eval/results/m3-kaggle-smoke/`). A rented GPU would take 2–5 hours.
 - A full fine-tune of `whisper-large-v3-turbo` does not fit in 16 GB. It would need a rented GPU under 0005.
-- Training on half the train split may cost a little accuracy. The report says so.

@@ -1,0 +1,158 @@
+[{"stream_name":"stderr","time":7.46289418,"data":"/usr/local/lib/python3.13/dist-packages/nbformat/validator.py:434: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.\n"}
+,{"stream_name":"stderr","time":7.462938263,"data":"  _validate(nbdict, ref, version, version_minor, relax_add_props)\n"}
+,{"stream_name":"stderr","time":8.464926351999999,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.46497612,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.464982485,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.464986248,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":9.080064627,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":9.080105574,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":9.080111784,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":9.080115972,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":10.431095275,"data":"Tue Nov 24 12:47:24 AM UTC 2026\r\n"}
+,{"stream_name":"stdout","time":10.431126695,"data":"Tue Nov 24 00:47:24 2026       \r\n"}
+,{"stream_name":"stdout","time":10.431130682,"data":"+-----------------------------------------------------------------------------------------+\r\n"}
+,{"stream_name":"stdout","time":10.431137922,"data":"| NVIDIA-SMI 580.178.04             Driver Version: 580.178.04     CUDA Version: 13.0     |\r\n"}
+,{"stream_name":"stdout","time":10.431140361,"data":"+-----------------------------------------+------------------------+----------------------+\r\n"}
+,{"stream_name":"stdout","time":10.431142786,"data":"| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |\r\n"}
+,{"stream_name":"stdout","time":10.431145348,"data":"| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\r\n"}
+,{"stream_name":"stdout","time":10.431147744,"data":"|                                         |                        |               MIG M. |\r\n"}
+,{"stream_name":"stdout","time":10.431150082,"data":"|=========================================+========================+======================|\r\n"}
+,{"stream_name":"stdout","time":10.481281503,"data":"|   0  Tesla T4                       Off |   00000000:00:04.0 Off |                    0 |\r\n"}
+,{"stream_name":"stdout","time":10.481301585,"data":"| N/A   53C    P8             10W /   70W |       0MiB /  15360MiB |      0%      Default |\r\n"}
+,{"stream_name":"stdout","time":10.481306431,"data":"|                                         |                        |                  N/A |\r\n"}
+,{"stream_name":"stdout","time":10.481330715,"data":"+-----------------------------------------+------------------------+----------------------+\r\n"}
+,{"stream_name":"stdout","time":10.4813352,"data":"|   1  Tesla T4                       Off |   00000000:00:05.0 Off |                    0 |\r\n"}
+,{"stream_name":"stdout","time":10.481338738,"data":"| N/A   42C    P8             10W /   70W |       0MiB /  15360MiB |      0%      Default |\r\n"}
+,{"stream_name":"stdout","time":10.481354261,"data":"|                                         |                        |                  N/A |\r\n"}
+,{"stream_name":"stdout","time":10.481358136,"data":"+-----------------------------------------+------------------------+----------------------+\r\n"}
+,{"stream_name":"stdout","time":10.48136163,"data":"\r\n"}
+,{"stream_name":"stdout","time":10.481364696,"data":"+-----------------------------------------------------------------------------------------+\r\n"}
+,{"stream_name":"stdout","time":10.481370256,"data":"| Processes:                                                                              |\r\n"}
+,{"stream_name":"stdout","time":10.481377919,"data":"|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\r\n"}
+,{"stream_name":"stdout","time":10.481380253,"data":"|        ID   ID                                                               Usage      |\r\n"}
+,{"stream_name":"stdout","time":10.481382488,"data":"|=========================================================================================|\r\n"}
+,{"stream_name":"stdout","time":10.481384737,"data":"|  No running processes found                                                             |\r\n"}
+,{"stream_name":"stdout","time":10.48138708,"data":"+-----------------------------------------------------------------------------------------+\r\n"}
+,{"stream_name":"stdout","time":10.800334086,"data":"Filesystem      Size  Used Avail Use% Mounted on\r\n"}
+,{"stream_name":"stdout","time":10.800362149,"data":"/dev/loop2       20G  120K   20G   1% /kaggle/working\r\n"}
+,{"stream_name":"stdout","time":10.800366893,"data":"overlay         8.0T  5.6T  2.5T  70% /\r\n"}
+,{"stream_name":"stdout","time":16.41961544,"data":"commit ca0ef7a2a8d127e27f579b2d5282085228f7f702 M3: Kaggle notebook settings in one cell\r\n"}
+,{"stream_name":"stdout","time":59.099861157,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\r\n"}
+,{"stream_name":"stdout","time":59.099894909,"data":"ModuleNotFoundError: No module named 'wrapt'\r\n"}
+,{"stream_name":"stdout","time":63.511335458,"data":"cuda True 2.15.0+cu132\r\n"}
+,{"stream_name":"stdout","time":64.14363926,"data":"drwxr-xr-x 2 root root 4096 Nov 24 00:47 m3-whisper-small-zeroshot\r\n"}
+,{"stream_name":"stdout","time":64.143667978,"data":"drwxr-xr-x 2 root root 4096 Nov 24 00:47 m3-whisper-small-zeroshot-fallback\r\n"}
+,{"stream_name":"stdout","time":64.143673102,"data":"-rw-r--r-- 1 root root  807 Nov 24 00:47 README.md\r\n"}
+,{"stream_name":"stdout","time":64.364128491,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\r\n"}
+,{"stream_name":"stdout","time":64.364160239,"data":"ModuleNotFoundError: No module named 'wrapt'\r\n"}
+,{"stream_name":"stdout","time":75.629497161,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\r\n"}
+,{"stream_name":"stdout","time":84.322160987,"data":"\rLoading weights:   0%|          | 0/479 [00:00\u003c?, ?it/s]\rLoading weights:  55%|█████▍    | 262/479 [00:00\u003c00:00, 2578.81it/s]\rLoading weights: 100%|██████████| 479/479 [00:00\u003c00:00, 2802.84it/s]\r\n"}
+,{"stream_name":"stdout","time":85.033224201,"data":"=== session start 2026-11-24T00:48:38+00:00 on cuda: Tesla T4 (16 GB), commit ca0ef7a, fresh start\r\n"}
+,{"stream_name":"stdout","time":85.033256796,"data":"settings: {'model': 'openai/whisper-small', 'train_split': 'train', 'train_files': 1, 'steps': 20, 'batch': 8, 'accumulate': 2, 'lr': 1e-05, 'warmup': 500, 'eval_every': 10, 'eval_clips': 10, 'max_hours': None, 'name': 'kaggle-smoke', 'seed': 42}\r\n"}
+,{"stream_name":"stdout","time":107.090464,"data":"\rFetching 1 files:   0%|          | 0/1 [00:00\u003c?, ?it/s]\rFetching 1 files: 100%|██████████| 1/1 [00:21\u003c00:00, 21.90s/it]\rFetching 1 files: 100%|██████████| 1/1 [00:21\u003c00:00, 21.90s/it]\r\n"}
+,{"stream_name":"stdout","time":114.150446435,"data":"/tmp/repo/models/whisper_full/finetune.py:174: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate\r\n"}
+,{"stream_name":"stdout","time":114.150483532,"data":"  sched.step()\r\n"}
+,{"stream_name":"stdout","time":146.077901709,"data":"\rFetching 6 files:   0%|          | 0/6 [00:00\u003c?, ?it/s]\rFetching 6 files:  17%|█▋        | 1/6 [00:06\u003c00:31,  6.33s/it]\rFetching 6 files:  33%|███▎      | 2/6 [00:12\u003c00:24,  6.13s/it]\rFetching 6 files:  50%|█████     | 3/6 [00:15\u003c00:13,  4.59s/it]\rFetching 6 files: 100%|██████████| 6/6 [00:15\u003c00:00,  2.51s/it]\r\n"}
+,{"stream_name":"stdout","time":146.893168672,"data":"[transformers] Passing `generation_config` together with generation-related arguments=({'begin_suppress_tokens', 'suppress_tokens'}) is deprecated and will be removed in future versions. Please pass either a `generation_config` object OR all generation parameters explicitly, but not both.\r\n"}
+,{"stream_name":"stdout","time":146.944403991,"data":"[transformers] Both `max_new_tokens` (=440) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)\r\n"}
+,{"stream_name":"stdout","time":147.705101263,"data":"[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer WhisperTokenizer. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.\r\n"}
+,{"stream_name":"stdout","time":147.756530754,"data":"[transformers] Both `max_new_tokens` (=440) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)\r\n"}
+,{"stream_name":"stdout","time":148.162365562,"data":"[transformers] Both `max_new_tokens` (=440) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)\r\n"}
+,{"stream_name":"stdout","time":148.41612305,"data":"[transformers] Both `max_new_tokens` (=440) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)\r\n"}
+,{"stream_name":"stdout","time":148.720199884,"data":"[transformers] Both `max_new_tokens` (=440) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)\r\n"}
+,{"stream_name":"stdout","time":149.429282593,"data":"[transformers] Both `max_new_tokens` (=440) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)\r\n"}
+,{"stream_name":"stdout","time":149.834419532,"data":"[transformers] Both `max_new_tokens` (=440) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)\r\n"}
+,{"stream_name":"stdout","time":150.442268029,"data":"[transformers] Both `max_new_tokens` (=440) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)\r\n"}
+,{"stream_name":"stdout","time":150.746105472,"data":"[transformers] Both `max_new_tokens` (=440) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)\r\n"}
+,{"stream_name":"stdout","time":151.558648022,"data":"[transformers] Both `max_new_tokens` (=440) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)\r\n"}
+,{"stream_name":"stdout","time":152.014026667,"data":"step 10  dev WER 0.355 on 10 clips\r\n"}
+,{"stream_name":"stdout","time":153.132392771,"data":"\rWriting model shards:   0%|          | 0/1 [00:00\u003c?, ?it/s]\rWriting model shards: 100%|██████████| 1/1 [00:01\u003c00:00,  1.06s/it]\rWriting model shards: 100%|██████████| 1/1 [00:01\u003c00:00,  1.06s/it]\r\n"}
+,{"stream_name":"stdout","time":153.233778428,"data":"  saved best to checkpoints/kaggle-smoke/best\r\n"}
+,{"stream_name":"stdout","time":153.233805062,"data":"step 10  loss 1.206  lr 2.20e-07  68s\r\n"}
+,{"stream_name":"stdout","time":174.900662548,"data":"\rFetching 6 files:   0%|          | 0/6 [00:00\u003c?, ?it/s]\rFetching 6 files: 100%|██████████| 6/6 [00:00\u003c00:00, 1158.11it/s]\r\n"}
+,{"stream_name":"stdout","time":175.458487735,"data":"[transformers] Both `max_new_tokens` (=440) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)\r\n"}
+,{"stream_name":"stdout","time":176.016939996,"data":"[transformers] Both `max_new_tokens` (=440) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)\r\n"}
+,{"stream_name":"stdout","time":176.472340545,"data":"[transformers] Both `max_new_tokens` (=440) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)\r\n"}
+,{"stream_name":"stdout","time":176.725456121,"data":"[transformers] Both `max_new_tokens` (=440) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)\r\n"}
+,{"stream_name":"stdout","time":177.080854056,"data":"[transformers] Both `max_new_tokens` (=440) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)\r\n"}
+,{"stream_name":"stdout","time":177.841144052,"data":"[transformers] Both `max_new_tokens` (=440) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)\r\n"}
+,{"stream_name":"stdout","time":178.195828315,"data":"[transformers] Both `max_new_tokens` (=440) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)\r\n"}
+,{"stream_name":"stdout","time":178.854402779,"data":"[transformers] Both `max_new_tokens` (=440) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)\r\n"}
+,{"stream_name":"stdout","time":179.107787197,"data":"[transformers] Both `max_new_tokens` (=440) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)\r\n"}
+,{"stream_name":"stdout","time":179.917555085,"data":"[transformers] Both `max_new_tokens` (=440) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)\r\n"}
+,{"stream_name":"stdout","time":180.424397301,"data":"step 20  dev WER 0.325 on 10 clips\r\n"}
+,{"stream_name":"stdout","time":181.796959184,"data":"\rWriting model shards:   0%|          | 0/1 [00:00\u003c?, ?it/s]\rWriting model shards: 100%|██████████| 1/1 [00:01\u003c00:00,  1.34s/it]\rWriting model shards: 100%|██████████| 1/1 [00:01\u003c00:00,  1.34s/it]\r\n"}
+,{"stream_name":"stdout","time":181.847173159,"data":"  saved best to checkpoints/kaggle-smoke/best\r\n"}
+,{"stream_name":"stdout","time":181.847201555,"data":"step 20  loss 1.334  lr 0.00e+00  97s\r\n"}
+,{"stream_name":"stdout","time":190.753708845,"data":"=== done: step 20, 106s this session; best dev WER 0.325; checkpoint checkpoints/kaggle-smoke/best\r\n"}
+,{"stream_name":"stdout","time":195.217811151,"data":"training finished: True\n"}
+,{"stream_name":"stdout","time":195.321797008,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\r\n"}
+,{"stream_name":"stdout","time":195.321826505,"data":"ModuleNotFoundError: No module named 'wrapt'\r\n"}
+,{"stream_name":"stdout","time":207.242621591,"data":"\rLoading weights:   0%|          | 0/479 [00:00\u003c?, ?it/s]\rLoading weights:  53%|█████▎    | 256/479 [00:00\u003c00:00, 2555.13it/s]\rLoading weights: 100%|██████████| 479/479 [00:00\u003c00:00, 2590.72it/s]\r\n"}
+,{"stream_name":"stdout","time":208.004610599,"data":"[transformers] Using `chunk_length_s` is very experimental with seq2seq models. The results will not necessarily be entirely accurate and will have caveats. More information: https://github.com/huggingface/transformers/pull/20104. Ignore this warning with pipeline(..., ignore_warning=True). To use Whisper for long-form transcription, use rather the model's `generate` method directly as the model relies on its own chunking mechanism (cf. Whisper original paper, section 3.8. Long-form Transcription).\r\n"}
+,{"stream_name":"stdout","time":211.534354715,"data":"=== predicting with checkpoints/kaggle-smoke/best on cuda: Tesla T4 (16 GB), commit ca0ef7a, fallback=True\r\n"}
+,{"stream_name":"stdout","time":241.945252297,"data":"\rFetching 12 files:   0%|          | 0/12 [00:00\u003c?, ?it/s]\rFetching 12 files:   8%|▊         | 1/12 [00:04\u003c00:53,  4.84s/it]\rFetching 12 files:  17%|█▋        | 2/12 [00:06\u003c00:30,  3.04s/it]\rFetching 12 files:  25%|██▌       | 3/12 [00:10\u003c00:32,  3.59s/it]\rFetching 12 files:  33%|███▎      | 4/12 [00:11\u003c00:18,  2.37s/it]\rFetching 12 files:  42%|████▏     | 5/12 [00:15\u003c00:22,  3.17s/it]\rFetching 12 files:  50%|█████     | 6/12 [00:30\u003c00:41,  6.99s/it]\rFetching 12 files: 100%|██████████| 12/12 [00:30\u003c00:00,  2.53s/it]\r\n"}
+,{"stream_name":"stdout","time":250.962009849,"data":"[transformers] Passing `generation_config` together with generation-related arguments=({'suppress_tokens', 'begin_suppress_tokens'}) is deprecated and will be removed in future versions. Please pass either a `generation_config` object OR all generation parameters explicitly, but not both.\r\n"}
+,{"stream_name":"stdout","time":252.433161076,"data":"[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer WhisperTokenizer. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.\r\n"}
+,{"stream_name":"stdout","time":261.350370361,"data":"[transformers] You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset\r\n"}
+,{"stream_name":"stdout","time":296.960996665,"data":"50/1000  47s\r\n"}
+,{"stream_name":"stdout","time":343.038931183,"data":"100/1000  93s\r\n"}
+,{"stream_name":"stdout","time":411.470794571,"data":"150/1000  161s\r\n"}
+,{"stream_name":"stdout","time":479.408891087,"data":"200/1000  229s\r\n"}
+,{"stream_name":"stdout","time":524.079043036,"data":"250/1000  274s\r\n"}
+,{"stream_name":"stdout","time":565.485474054,"data":"300/1000  315s\r\n"}
+,{"stream_name":"stdout","time":608.050921699,"data":"350/1000  358s\r\n"}
+,{"stream_name":"stdout","time":649.676511205,"data":"400/1000  399s\r\n"}
+,{"stream_name":"stdout","time":705.522019344,"data":"450/1000  455s\r\n"}
+,{"stream_name":"stdout","time":751.094167868,"data":"500/1000  501s\r\n"}
+,{"stream_name":"stdout","time":796.591533799,"data":"550/1000  546s\r\n"}
+,{"stream_name":"stdout","time":842.941069522,"data":"600/1000  593s\r\n"}
+,{"stream_name":"stdout","time":899.770899615,"data":"650/1000  650s\r\n"}
+,{"stream_name":"stdout","time":943.303375308,"data":"700/1000  693s\r\n"}
+,{"stream_name":"stdout","time":985.014395964,"data":"750/1000  735s\r\n"}
+,{"stream_name":"stdout","time":1027.056463975,"data":"800/1000  777s\r\n"}
+,{"stream_name":"stdout","time":1077.952003398,"data":"850/1000  828s\r\n"}
+,{"stream_name":"stdout","time":1132.801165569,"data":"900/1000  883s\r\n"}
+,{"stream_name":"stdout","time":1171.768466353,"data":"950/1000  922s\r\n"}
+,{"stream_name":"stdout","time":1224.191197138,"data":"1000/1000  974s\r\n"}
+,{"stream_name":"stdout","time":1224.191238926,"data":"=== done in 974s on cuda: eval/results/m3-kaggle-smoke/predictions.csv\r\n"}
+,{"stream_name":"stdout","time":1225.789937561,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\r\n"}
+,{"stream_name":"stdout","time":1225.789987295,"data":"ModuleNotFoundError: No module named 'wrapt'\r\n"}
+,{"stream_name":"stdout","time":1226.022882956,"data":"overall  WER 0.341  CER 0.197  n=1000\r\n"}
+,{"stream_name":"stdout","time":1226.022915342,"data":"domain   clinical             WER 0.385  CER 0.198  n=500\r\n"}
+,{"stream_name":"stdout","time":1226.022921067,"data":"domain   general              WER 0.308  CER 0.196  n=500\r\n"}
+,{"stream_name":"stdout","time":1226.022926101,"data":"accent   hausa                WER 0.301  CER 0.149  n=35\r\n"}
+,{"stream_name":"stdout","time":1226.02294319,"data":"accent   igbo                 WER 0.412  CER 0.247  n=49\r\n"}
+,{"stream_name":"stdout","time":1226.022948608,"data":"accent   swahili              WER 0.248  CER 0.151  n=90\r\n"}
+,{"stream_name":"stdout","time":1226.022956907,"data":"accent   yoruba               WER 0.329  CER 0.192  n=100\r\n"}
+,{"stream_name":"stdout","time":1226.022959427,"data":"accent   zulu                 WER 0.296  CER 0.163  n=34\r\n"}
+,{"stream_name":"stdout","time":1226.198471277,"data":"926M\t/kaggle/working/checkpoints/kaggle-smoke/best\r\n"}
+,{"stream_name":"stdout","time":1226.198498148,"data":"2.8G\t/kaggle/working/checkpoints/kaggle-smoke/last\r\n"}
+,{"stream_name":"stdout","time":1226.209693915,"data":"total 240\r\n"}
+,{"stream_name":"stdout","time":1226.209713739,"data":"drwxr-xr-x 2 root root   4096 Nov 24 01:07 .\r\n"}
+,{"stream_name":"stdout","time":1226.209719024,"data":"drwxr-xr-x 4 root root   4096 Nov 24 00:48 ..\r\n"}
+,{"stream_name":"stdout","time":1226.209723407,"data":"-rw-r--r-- 1 root root    495 Nov 24 00:50 environment-predict.json\r\n"}
+,{"stream_name":"stdout","time":1226.209727271,"data":"-rw-r--r-- 1 root root    585 Nov 24 00:48 environment-session-2026-11-24T004838+0000.json\r\n"}
+,{"stream_name":"stdout","time":1226.209731393,"data":"-rw-r--r-- 1 root root   2232 Nov 24 00:47 machine-20261124T004724.log\r\n"}
+,{"stream_name":"stdout","time":1226.209735093,"data":"-rw-r--r-- 1 root root 181128 Nov 24 01:07 predictions.csv\r\n"}
+,{"stream_name":"stdout","time":1226.209738744,"data":"-rw-r--r-- 1 root root    476 Nov 24 01:07 predict.log\r\n"}
+,{"stream_name":"stdout","time":1226.209748797,"data":"-rw-r--r-- 1 root root    663 Nov 24 01:07 scores.json\r\n"}
+,{"stream_name":"stdout","time":1226.209751314,"data":"-rw-r--r-- 1 root root   2724 Nov 24 01:07 stdout-predict.log\r\n"}
+,{"stream_name":"stdout","time":1226.209753786,"data":"-rw-r--r-- 1 root root    542 Nov 24 01:07 stdout-score.log\r\n"}
+,{"stream_name":"stdout","time":1226.20975627,"data":"-rw-r--r-- 1 root root   8808 Nov 24 00:50 stdout-train-20261124T004818.log\r\n"}
+,{"stream_name":"stdout","time":1226.20975888,"data":"-rw-r--r-- 1 root root    683 Nov 24 00:50 train.log\r\n"}
+,{"stream_name":"stdout","time":1226.209761354,"data":"-rw-r--r-- 1 root root    100 Nov 24 00:50 train_log.csv\r\n"}
+,{"stream_name":"stdout","time":1226.209763785,"data":"step 10  loss 1.206  lr 2.20e-07  68s\r\n"}
+,{"stream_name":"stdout","time":1226.209766132,"data":"step 20  dev WER 0.325 on 10 clips\r\n"}
+,{"stream_name":"stdout","time":1226.209768531,"data":"  saved best to checkpoints/kaggle-smoke/best\r\n"}
+,{"stream_name":"stdout","time":1226.209770889,"data":"step 20  loss 1.334  lr 0.00e+00  97s\r\n"}
+,{"stream_name":"stdout","time":1226.20977326,"data":"=== done: step 20, 106s this session; best dev WER 0.325; checkpoint checkpoints/kaggle-smoke/best\r\n"}
+,{"stream_name":"stderr","time":1229.249170814,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":1229.249207455,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":1229.432348278,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":1229.432374901,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":1230.242679548,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":1230.338788405,"data":"[NbConvertApp] Writing 26034 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":1232.955992042,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":1233.512492424,"data":"[NbConvertApp] Writing 304173 bytes to __results__.html\n"}
+]

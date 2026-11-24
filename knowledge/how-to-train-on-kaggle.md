@@ -27,9 +27,19 @@ No tokens or keys are needed, because both the repo and the dataset mirror are p
 1. Optional: check the first cells interactively. Run cells 1 to 3 and check that:
    - `nvidia-smi` shows a T4;
    - `cuda True` is printed;
-   - `df` shows at least about 45 GB free. If not, lower `--train-files` in cell 4. Each file is about 2 GB and about 2,000 clips.
+   - `df` shows plenty of free disk. In the trial, `/` had 2.5 TB free.
 2. **Save Version → Save & Run All (Commit) → Save.** This runs the whole notebook in the background, even with the browser closed. It is the only mode that survives closing the tab.
 3. Watch it from **Your Work → the notebook → Versions → the running version → Logs**.
+
+## Or start it from the command line (what we did for M3)
+
+1. Install the tool: `pipx install kaggle && pipx inject kaggle six`. On Python 3.15, `six` is missing otherwise.
+2. Create a token: on kaggle.com, **Settings → API → Create New Token**. Copy it, then run `pbpaste > ~/.kaggle/access_token && chmod 600 ~/.kaggle/access_token`. Never paste the token into a chat, a terminal you share, or the repo.
+3. Make a folder outside the repo that holds:
+   - the notebook, with cell 0 changed for this run;
+   - a `kernel-metadata.json` containing `"id": "<username>/<slug>"`, `"code_file": "kaggle_finetune.ipynb"`, `"kernel_type": "notebook"`, `"is_private": true`, `"enable_gpu": true` and `"enable_internet": true`.
+4. Start the run: `kaggle kernels push -p <folder> --accelerator NvidiaTeslaT4`. It runs like "Save & Run All".
+5. Check its status with `kaggle kernels status <username>/<slug>`. When it says complete, download everything with `kaggle kernels output <username>/<slug> -p <download folder>`. That folder includes the notebook's own log.
 
 ## What gets saved (the proof)
 
@@ -60,7 +70,7 @@ Cell 3 copies the previous logs and the `last/` state in, and training continues
 
 - **`cuda False` in cell 2:** the accelerator is off, or the phone is not verified.
 - **Out of memory:** lower `--batch` to 4 and raise `--accumulate` to 4. The effective batch stays at 16.
-- **Disk full while downloading:** lower `--train-files`.
-- **Quota:** check the hours left at the top of the notebook editor. One full run is about 6–10 h of the 30 per week.
+- **Disk full while downloading:** unlikely (2.5 TB free), but `--train-files N` uses only the first N of the 28 train files.
+- **Quota:** check the hours left at the top of the notebook editor. One full whisper-small run is about 4 h of the 30 per week (measured in the trial: about 2.5 s per step).
 
 Related: [[how-to-score-a-model]], [[save-every-result-to-a-file]], [[environment]]

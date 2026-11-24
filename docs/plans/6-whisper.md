@@ -35,7 +35,7 @@ Measure how well Whisper transcribes AfriSpeech **with no training** (zero-shot)
 
 ## GPU cost estimate
 
-Zero-shot: none (Mac). Full fine-tune of `whisper-small`: Kaggle's free T4 (decision 0012), about 6–10 GPU hours of the 30-hour weekly quota, 0 USD. Batch 8 × accumulate 2, 14 of the 28 train files. On a rented L4, A10 or A100 it would be 2–5 hours and 2–5 USD.
+Zero-shot: none (Mac). Full fine-tune of `whisper-small`: Kaggle's free T4 (decision 0012), about 4 GPU hours of the 30-hour weekly quota (measured in the Kaggle trial), 0 USD. Batch 8 × accumulate 2, all 28 train files. On a rented L4, A10 or A100 it would be 2–5 hours and 2–5 USD.
 
 ## Done when
 

@@ -3,8 +3,7 @@
     # smoke test on the laptop: tiny model, a few dev clips, loss should go down
     uv run python -m models.whisper_full.finetune --model openai/whisper-tiny --train-split dev --steps 30 --eval-clips 0
     # the real run, on Kaggle (see knowledge/how-to-train-on-kaggle.md)
-    uv run python -m models.whisper_full.finetune --model openai/whisper-small --steps 4000 --batch 8 --accumulate 2 \
-        --train-files 14 --max-hours 11
+    uv run python -m models.whisper_full.finetune --model openai/whisper-small --steps 4000 --batch 8 --accumulate 2 --max-hours 10
 
 Trains on --train-split, checks WER on --eval-clips dev clips every --eval-every steps.
 Proof of the run (committed): eval/results/m3-<name>/ holds train.log (every printed line),
