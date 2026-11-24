@@ -23,7 +23,7 @@ Every model owner can now predict on the same 1,000 test clips and score with on
   - It refuses predictions with missing, duplicate or extra IDs.
 - **Decisions:**
   - 0009 (test set, scoring, predictions format, checkpoints);
-  - 0010 (the public copy, Proposed until the instructor approves).
+  - 0010 (the public copy, Accepted: Dr. Asamoah approved it).
 - **Docs:** the setup docs (`knowledge/environment.md`, `knowledge/afrispeech-200.md`, README, AGENTS.md) now describe the public copy instead of the gated repo.
 - **Dependencies:** huggingface_hub, librosa and pyarrow.
 - **Tests:** the network test (downloads the audio) is skipped by default. Run it with `uv run pytest -m network`.
