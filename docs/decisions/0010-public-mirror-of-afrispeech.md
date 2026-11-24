@@ -1,12 +1,12 @@
 ---
-title: Use the public copy evie-8/afrispeech-200 while official access is pending
-status: Proposed
+title: Use the public copy evie-8/afrispeech-200 because official access was not granted
+status: Accepted
 date: 2026-11-20
-decided-by: Joseph (pending Dr. Asamoah's approval)
+decided-by: Joseph; approved by Dr. Asamoah (confirmed to the team 2026-11-24)
 ai-use: Claude compared the copy with the official dataset card and wrote the loader; Joseph chose the copy and asked the instructor
 ---
 
-# 0010. Use the public copy evie-8/afrispeech-200 while official access is pending
+# 0010. Use the public copy evie-8/afrispeech-200 because official access was not granted
 
 ## Context
 
@@ -31,7 +31,7 @@ The official dataset, `intronhealth/afrispeech-200`, is gated. We requested acce
 
 Use the copy, pinned to revision `cafdc16d1e1dcfcd2b599c00b1ea44d5624db08f`, through `common/data.py`. This adds `pyarrow` to the dependencies in decision 0008.
 
-**This decision stays Proposed until the instructor approves.** If he says no, we wait for official access. `common/data.py` (`REPO`, `REVISION` and how the audio is read) would then switch to the official files, `common/test_set.csv` would be checked against them, and a new decision would supersede this one.
+**Accepted:** Dr. Asamoah approved using the public copy (confirmed to the team on 2026-11-24). If official access is granted later, `common/data.py` (`REPO`, `REVISION` and how the audio is read) could switch to the official files, `common/test_set.csv` would be checked against them, and a new decision would supersede this one.
 
 ## Consequences
 
