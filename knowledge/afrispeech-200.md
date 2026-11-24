@@ -21,8 +21,8 @@ AfriSpeech-200 (Intron Health) is **African-accented English** speech with trans
 - **Fields per clip:** `speaker_id, path, audio_id, audio, transcript, age_group, gender, accent, domain, country, duration`.
 - **Transcripts space out punctuation** ("in her 50 s ."), so we normalise text before scoring ([[word-error-rate]]).
 - **Many accents are tiny** (some have about a dozen clips), so per-accent scores on them are noise. We report accents with 30 or more test clips.
-- **Access and licence:** gated (accept the terms on Hugging Face); CC BY-NC-SA 4.0, for research and non-commercial use. We must not try to identify speakers.
-- **Files:** `transcripts/<split>.csv` and `audio/<accent>/<split>/*.tar.gz`. It has a loading script, so see [[environment]] for how we load it.
+- **Access and licence:** the official repo is gated; we use the public copy `evie-8/afrispeech-200` (decision 0010). CC BY-NC-SA 4.0, for research and non-commercial use. We must not try to identify speakers.
+- **Files:** the official repo has `transcripts/<split>.csv` and `audio/<accent>/<split>/*.tar.gz`. The copy we use has Parquet files (`data/<split>-*.parquet`) with the audio inside: train 57,819 clips, dev 3,227, test 6,318 (3,606 clinical, 2,712 general), 28 test clips fewer than the official 6,346. See [[environment]].
 
 **Example:** a Yoruba-accented speaker reading a clinical sentence: "His mother is in her 50 s and has hypertension ."
 

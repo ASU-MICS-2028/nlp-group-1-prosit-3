@@ -64,7 +64,7 @@ They are written as Claude Code skills, but they are plain Markdown, so any assi
 - **The repo is public.** Never read, print or commit `.env` or any key. Never commit audio, model weights, `data/`, student IDs or personal details. `scripts/check_secrets.py` runs before every commit and on GitHub, but do not rely on it alone.
 - **Stay in your member's slot.** Do not edit code another person owns. If it is broken, say so on their issue.
 - **Everyone scores the same way.** Predict on `common/test_set.csv` and score with `uv run python -m common.score`. Never change the test set or the scorer in a model PR. That needs a decision record.
-- **Dataset:** AfriSpeech-200 is gated and licensed CC BY-NC-SA 4.0. Access and setup are in `knowledge/environment.md`.
+- **Dataset:** AfriSpeech-200, licensed CC BY-NC-SA 4.0, loaded only through `common/data.py` (public copy, decision 0010). Access and setup are in `knowledge/environment.md`.
 - **GPU:** one shared account. State the expected cost before a run and log every run in `docs/gpu-log.md`.
 - **Python through `uv`** (`uv sync`, `uv add`, `uv run`). Keep dependencies few. Each new one gets a decision record.
 - **One branch per issue** (`<issue#>-<slug>`), merged into `main` by a pull request whose change file is filled in.

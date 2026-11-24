@@ -10,7 +10,13 @@ import sys
 from pathlib import Path
 
 KEY = re.compile(r"sk-ant-[A-Za-z0-9_\-]{16,}|sk-[A-Za-z0-9]{32,}|AKIA[0-9A-Z]{16}|-----BEGIN [A-Z ]*PRIVATE KEY-----|hf_[A-Za-z0-9]{30,}")
-BAD_PATH = re.compile(r"(^|/)\.env$|\.(gguf|safetensors|bin|pt|pth|ckpt|onnx|h5|wav|mp3|flac|tar\.gz)$|(^|/)data/")
+BAD_PATH = re.compile(
+    r"(^|/)\.env$|(^|/)data/"
+    r"|\.(gguf|safetensors|bin|pt|pth|ckpt|onnx|h5|keras|tflite|msgpack|npy|npz|pkl|parquet|arrow"  # models and data
+    r"|wav|mp3|flac|ogg|opus|m4a|aac|webm|mp4"  # audio: a doctor's voice must never reach a public repo
+    r"|zip|tar|tgz|tar\.gz)$",
+    re.I,
+)
 MAX_MB = 5
 
 
@@ -20,7 +26,7 @@ def git(*args):
 
 def main():
     staged = "--staged" in sys.argv
-    files = git("diff", "--cached", "--name-only", "--diff-filter=ACM") if staged else git("ls-files")
+    files = git("diff", "--cached", "--name-only", "--diff-filter=ACMR") if staged else git("ls-files")
     problems = []
     for path in filter(None, files.splitlines()):
         if BAD_PATH.search(path):

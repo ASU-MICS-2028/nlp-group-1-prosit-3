@@ -8,3 +8,4 @@ One file per merged PR: what changed, who was in charge, the issue, and **how AI
 |---|---|---|---|
 | [Repo setup - guards, generated indexes, workflow templates, skills, decisions 0001-0008](1-repo-setup.md) | Joseph Etse | #1 | Claude Code wrote the scaffold, scripts, templates and skills from Joseph's design; Joseph reviewed them |
 | [Knowledge folder - lectures 1-12, prosits, course, 61 atomic notes](2-knowledge-folder.md) | Joseph Etse | #2 | Claude Code summarised lectures 9-12 from the transcripts and wrote the atomic notes; Joseph reviewed samples. Lectures 1-8 were carried over from Prosit 2 |
+| [S0 - fixed 1,000-clip test set, audio access and shared scorer](3-s0-test-set-and-scorer.md) | Joseph Etse | #3 | Claude Code wrote common/ and its tests from the approved plan and ran the checks; Joseph chose the public dataset copy and reviews the PR |

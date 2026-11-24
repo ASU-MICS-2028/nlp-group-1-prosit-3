@@ -39,8 +39,8 @@ Slides live in the group's shared Drive (`NLP-GROUP-1/prosit 3/`).
 
 ## Running it
 
-Setup is in [`knowledge/environment.md`](knowledge/environment.md). In short: install [uv](https://docs.astral.sh/uv/), run `uv sync`, accept the AfriSpeech-200 terms on Hugging Face, put your `HF_TOKEN` in `.env` (see `.env.example`), and run `git config core.hooksPath .githooks`.
+Setup is in [`knowledge/environment.md`](knowledge/environment.md). In short: install [uv](https://docs.astral.sh/uv/), run `uv sync`, and run `git config core.hooksPath .githooks`.
 
 ## Data licence
 
-[AfriSpeech-200](https://huggingface.co/datasets/intronhealth/afrispeech-200) by Intron Health, CC BY-NC-SA 4.0, for research use. `common/test_set.csv` contains transcripts from its test split under the same licence. We make no attempt to identify speakers.
+[AfriSpeech-200](https://huggingface.co/datasets/intronhealth/afrispeech-200) by Intron Health, CC BY-NC-SA 4.0, for research use. We download it from the public copy [evie-8/afrispeech-200](https://huggingface.co/datasets/evie-8/afrispeech-200) because access to the official repo was not granted; Dr. Asamoah approved this (decision 0010). `common/test_set.csv` contains transcripts from its test split under the same licence. We make no attempt to identify speakers.

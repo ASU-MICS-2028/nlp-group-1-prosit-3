@@ -41,3 +41,21 @@ def test_allows_csv(tmp_path):
 def test_allows_code_under_models(tmp_path):
     r = run_on(tmp_path, {"models/rnn_ctc/train.py": "print('hi')\n"})
     assert r.returncode == 0, r.stderr
+
+
+def test_blocks_more_audio_and_data_formats(tmp_path):
+    for name in ["A.WAV", "note.webm", "c.ogg", "d.m4a", "f.npy", "g.parquet", "h.zip", "k.tgz", "j.pkl"]:
+        d = tmp_path / name.replace(".", "_")
+        d.mkdir()
+        r = run_on(d, {name: "x"})
+        assert r.returncode == 1, name
+
+
+def test_blocks_rename_into_data(tmp_path):
+    run_on(tmp_path, {"note.txt": "x"})
+    subprocess.run(["git", "commit", "-qm", "x", "--no-verify"], cwd=tmp_path, check=True,
+                   env={"GIT_AUTHOR_NAME": "t", "GIT_AUTHOR_EMAIL": "t@t", "GIT_COMMITTER_NAME": "t", "GIT_COMMITTER_EMAIL": "t@t", "PATH": "/usr/bin:/bin"})
+    (tmp_path / "data").mkdir()
+    subprocess.run(["git", "mv", "-f", "note.txt", "data/clip.txt"], cwd=tmp_path, check=True)
+    r = subprocess.run([sys.executable, str(SCRIPT), "--staged"], cwd=tmp_path, capture_output=True, text=True)
+    assert r.returncode == 1 and "data/clip.txt" in r.stderr
