@@ -1,0 +1,10 @@
+Error in sitecustomize; set PYTHONVERBOSE for traceback:
+ModuleNotFoundError: No module named 'wrapt'
+overall  WER 0.156  CER 0.071  n=1000
+domain   clinical             WER 0.200  CER 0.089  n=500
+domain   general              WER 0.123  CER 0.057  n=500
+accent   hausa                WER 0.145  CER 0.059  n=35
+accent   igbo                 WER 0.158  CER 0.080  n=49
+accent   swahili              WER 0.111  CER 0.048  n=90
+accent   yoruba               WER 0.161  CER 0.070  n=100
+accent   zulu                 WER 0.135  CER 0.062  n=34

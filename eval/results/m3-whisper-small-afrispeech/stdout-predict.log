@@ -1,0 +1,30 @@
+Error in sitecustomize; set PYTHONVERBOSE for traceback:
+ModuleNotFoundError: No module named 'wrapt'
+Loading weights:   0%|          | 0/479 [00:00<?, ?it/s]Loading weights:  56%|█████▌    | 268/479 [00:00<00:00, 2676.27it/s]Loading weights: 100%|██████████| 479/479 [00:00<00:00, 2720.17it/s]
+[transformers] Using `chunk_length_s` is very experimental with seq2seq models. The results will not necessarily be entirely accurate and will have caveats. More information: https://github.com/huggingface/transformers/pull/20104. Ignore this warning with pipeline(..., ignore_warning=True). To use Whisper for long-form transcription, use rather the model's `generate` method directly as the model relies on its own chunking mechanism (cf. Whisper original paper, section 3.8. Long-form Transcription).
+=== predicting with checkpoints/whisper-small-afrispeech/best on cuda: Tesla T4 (16 GB), commit bded701, fallback=True
+Fetching 12 files:   0%|          | 0/12 [00:00<?, ?it/s]Fetching 12 files:   8%|▊         | 1/12 [00:04<00:53,  4.83s/it]Fetching 12 files:  17%|█▋        | 2/12 [00:07<00:34,  3.40s/it]Fetching 12 files:  25%|██▌       | 3/12 [00:15<00:51,  5.67s/it]Fetching 12 files:  33%|███▎      | 4/12 [00:22<00:50,  6.28s/it]Fetching 12 files:  67%|██████▋   | 8/12 [00:28<00:11,  2.94s/it]Fetching 12 files:  83%|████████▎ | 10/12 [00:29<00:04,  2.13s/it]Fetching 12 files: 100%|██████████| 12/12 [00:29<00:00,  2.47s/it]
+[transformers] Passing `generation_config` together with generation-related arguments=({'begin_suppress_tokens', 'suppress_tokens'}) is deprecated and will be removed in future versions. Please pass either a `generation_config` object OR all generation parameters explicitly, but not both.
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer WhisperTokenizer. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+[transformers] You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+50/1000  44s
+100/1000  88s
+150/1000  158s
+200/1000  209s
+250/1000  252s
+300/1000  290s
+350/1000  331s
+400/1000  370s
+450/1000  412s
+500/1000  455s
+550/1000  508s
+600/1000  551s
+650/1000  595s
+700/1000  636s
+750/1000  675s
+800/1000  714s
+850/1000  762s
+900/1000  803s
+950/1000  839s
+1000/1000  878s
+=== done in 878s on cuda: eval/results/m3-whisper-small-afrispeech/predictions.csv

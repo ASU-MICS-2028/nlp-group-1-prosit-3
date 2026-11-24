@@ -2,7 +2,7 @@
 title: "M3: Whisper zero-shot + full fine-tune"
 owner: Joseph Etse
 issue: "#6"
-status: doing
+status: doing (fine-tune done: WER 0.156; report and slides next)
 ai-use: Claude drafted the plan and the zero-shot script; Joseph reviews
 ---
 

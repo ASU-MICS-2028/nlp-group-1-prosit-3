@@ -1,0 +1,4 @@
+predictions,clips_wer_over_1,spoken_punctuation_not_in_reference
+eval/results/m3-whisper-small-zeroshot-fallback/predictions.csv,45,347
+eval/results/m3-whisper-large-v3-turbo-zeroshot-fallback/predictions.csv,35,383
+eval/results/m3-whisper-small-afrispeech/predictions.csv,10,12
