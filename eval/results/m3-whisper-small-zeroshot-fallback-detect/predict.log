@@ -1,0 +1,22 @@
+=== predicting with openai/whisper-small on cuda: Tesla T4 (16 GB), commit 7dc1099, fallback=True, detect=True
+50/1000  161s
+100/1000  358s
+150/1000  527s
+200/1000  775s
+250/1000  940s
+300/1000  1098s
+350/1000  1347s
+400/1000  1581s
+450/1000  1824s
+500/1000  1952s
+550/1000  2189s
+600/1000  2364s
+650/1000  2709s
+700/1000  2888s
+750/1000  2991s
+800/1000  3104s
+850/1000  3379s
+900/1000  3571s
+950/1000  3808s
+1000/1000  4032s
+=== done in 4032s on cuda: eval/results/m3-whisper-small-zeroshot-fallback-detect/predictions.csv

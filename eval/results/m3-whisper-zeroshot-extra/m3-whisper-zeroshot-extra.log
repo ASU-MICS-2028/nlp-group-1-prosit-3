@@ -1,0 +1,310 @@
+[{"stream_name":"stderr","time":7.742194418,"data":"/usr/local/lib/python3.13/dist-packages/nbformat/validator.py:434: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.\n"}
+,{"stream_name":"stderr","time":7.742237524,"data":"  _validate(nbdict, ref, version, version_minor, relax_add_props)\n"}
+,{"stream_name":"stderr","time":8.721027811,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.721055072,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.721060524,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.721064445,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":9.368660912,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":9.368695093,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":9.368698733,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":9.368741441,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":10.640795773,"data":"Tue Nov 24 08:29:47 PM UTC 2026\r\n"}
+,{"stream_name":"stdout","time":10.640821434,"data":"Tue Nov 24 20:29:47 2026       \r\n"}
+,{"stream_name":"stdout","time":10.640825695,"data":"+-----------------------------------------------------------------------------------------+\r\n"}
+,{"stream_name":"stdout","time":10.640829403,"data":"| NVIDIA-SMI 580.178.04             Driver Version: 580.178.04     CUDA Version: 13.0     |\r\n"}
+,{"stream_name":"stdout","time":10.640832899,"data":"+-----------------------------------------+------------------------+----------------------+\r\n"}
+,{"stream_name":"stdout","time":10.640836371,"data":"| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |\r\n"}
+,{"stream_name":"stdout","time":10.64083987,"data":"| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\r\n"}
+,{"stream_name":"stdout","time":10.640843459,"data":"|                                         |                        |               MIG M. |\r\n"}
+,{"stream_name":"stdout","time":10.640847534,"data":"|=========================================+========================+======================|\r\n"}
+,{"stream_name":"stdout","time":10.691657512,"data":"|   0  Tesla T4                       Off |   00000000:00:04.0 Off |                    0 |\r\n"}
+,{"stream_name":"stdout","time":10.691677024,"data":"| N/A   60C    P8             13W /   70W |       0MiB /  15360MiB |      0%      Default |\r\n"}
+,{"stream_name":"stdout","time":10.691681717,"data":"|                                         |                        |                  N/A |\r\n"}
+,{"stream_name":"stdout","time":10.691685407,"data":"+-----------------------------------------+------------------------+----------------------+\r\n"}
+,{"stream_name":"stdout","time":10.691689086,"data":"|   1  Tesla T4                       Off |   00000000:00:05.0 Off |                    0 |\r\n"}
+,{"stream_name":"stdout","time":10.691692525,"data":"| N/A   59C    P8             12W /   70W |       0MiB /  15360MiB |      0%      Default |\r\n"}
+,{"stream_name":"stdout","time":10.691727295,"data":"|                                         |                        |                  N/A |\r\n"}
+,{"stream_name":"stdout","time":10.691734496,"data":"+-----------------------------------------+------------------------+----------------------+\r\n"}
+,{"stream_name":"stdout","time":10.691738574,"data":"\r\n"}
+,{"stream_name":"stdout","time":10.691742415,"data":"+-----------------------------------------------------------------------------------------+\r\n"}
+,{"stream_name":"stdout","time":10.691746304,"data":"| Processes:                                                                              |\r\n"}
+,{"stream_name":"stdout","time":10.691749719,"data":"|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\r\n"}
+,{"stream_name":"stdout","time":10.691753212,"data":"|        ID   ID                                                               Usage      |\r\n"}
+,{"stream_name":"stdout","time":10.69175958,"data":"|=========================================================================================|\r\n"}
+,{"stream_name":"stdout","time":10.691763119,"data":"|  No running processes found                                                             |\r\n"}
+,{"stream_name":"stdout","time":10.691766545,"data":"+-----------------------------------------------------------------------------------------+\r\n"}
+,{"stream_name":"stdout","time":11.020075674,"data":"Filesystem      Size  Used Avail Use% Mounted on\r\n"}
+,{"stream_name":"stdout","time":11.020098587,"data":"/dev/loop2       20G  112K   20G   1% /kaggle/working\r\n"}
+,{"stream_name":"stdout","time":11.020103533,"data":"overlay         8.0T  5.6T  2.5T  70% /\r\n"}
+,{"stream_name":"stdout","time":17.949367386,"data":"commit 7dc10993196ba8854f23198d6182f63e0e13a222 M3: Section B and slide draft for Joseph's review (optional runs pending)\r\n"}
+,{"stream_name":"stdout","time":74.987551755,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\r\n"}
+,{"stream_name":"stdout","time":74.987589498,"data":"ModuleNotFoundError: No module named 'wrapt'\r\n"}
+,{"stream_name":"stdout","time":83.859113655,"data":"cuda True 2.15.0+cu132\r\n"}
+,{"stream_name":"stdout","time":84.434614327,"data":"===== openai/whisper-tiny --fallback -\u003e /tmp/repo/eval/results/m3-whisper-tiny-zeroshot-fallback\n"}
+,{"stream_name":"stdout","time":84.503827888,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\n"}
+,{"stream_name":"stdout","time":84.503855933,"data":"ModuleNotFoundError: No module named 'wrapt'\n"}
+,{"stream_name":"stdout","time":84.515906734,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\n"}
+,{"stream_name":"stdout","time":84.515957476,"data":"ModuleNotFoundError: No module named 'wrapt'\n"}
+,{"stream_name":"stdout","time":94.744281353,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stdout","time":94.946776479,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stdout","time":97.235773879,"data":"\rLoading weights:   0%|          | 0/167 [00:00\u003c?, ?it/s]\rLoading weights: 100%|██████████| 167/167 [00:00\u003c00:00, 2962.17it/s]\n"}
+,{"stream_name":"stdout","time":97.381014736,"data":"\rLoading weights:   0%|          | 0/167 [00:00\u003c?, ?it/s]\rLoading weights: 100%|██████████| 167/167 [00:00\u003c00:00, 2962.17it/s]\n"}
+,{"stream_name":"stdout","time":99.02254884,"data":"[transformers] Using `chunk_length_s` is very experimental with seq2seq models. The results will not necessarily be entirely accurate and will have caveats. More information: https://github.com/huggingface/transformers/pull/20104. Ignore this warning with pipeline(..., ignore_warning=True). To use Whisper for long-form transcription, use rather the model's `generate` method directly as the model relies on its own chunking mechanism (cf. Whisper original paper, section 3.8. Long-form Transcription).\n"}
+,{"stream_name":"stdout","time":99.027695915,"data":"=== predicting with openai/whisper-tiny on cuda: Tesla T4 (16 GB), commit 7dc1099, fallback=True, detect=False\n"}
+,{"stream_name":"stdout","time":99.224694812,"data":"\rFetching 12 files:   0%|          | 0/12 [00:00\u003c?, ?it/s][transformers] Using `chunk_length_s` is very experimental with seq2seq models. The results will not necessarily be entirely accurate and will have caveats. More information: https://github.com/huggingface/transformers/pull/20104. Ignore this warning with pipeline(..., ignore_warning=True). To use Whisper for long-form transcription, use rather the model's `generate` method directly as the model relies on its own chunking mechanism (cf. Whisper original paper, section 3.8. Long-form Transcription).\n"}
+,{"stream_name":"stdout","time":99.224737167,"data":"=== predicting with openai/whisper-tiny on cuda: Tesla T4 (16 GB), commit 7dc1099, fallback=True, detect=False\n"}
+,{"stream_name":"stdout","time":136.298010619,"data":"\rFetching 12 files:   0%|          | 0/12 [00:00\u003c?, ?it/s]\rFetching 12 files:   8%|▊         | 1/12 [00:10\u003c01:50, 10.05s/it]\rFetching 12 files:   8%|▊         | 1/12 [00:10\u003c01:50, 10.05s/it]\rFetching 12 files:  17%|█▋        | 2/12 [00:23\u003c01:59, 11.94s/it]\rFetching 12 files:  17%|█▋        | 2/12 [00:23\u003c01:59, 11.94s/it]\rFetching 12 files:  58%|█████▊    | 7/12 [00:27\u003c00:14,  2.99s/it]\rFetching 12 files:  58%|█████▊    | 7/12 [00:27\u003c00:14,  2.99s/it]\rFetching 12 files:  67%|██████▋   | 8/12 [00:30\u003c00:11,  2.94s/it]\rFetching 12 files:  67%|██████▋   | 8/12 [00:30\u003c00:11,  2.94s/it]\rFetching 12 files:  83%|████████▎ | 10/12 [00:37\u003c00:06,  3.10s/it]\rFetching 12 files: 100%|██████████| 12/12 [00:37\u003c00:00,  3.10s/it]\n"}
+,{"stream_name":"stdout","time":136.500918542,"data":"\rFetching 12 files:  83%|████████▎ | 10/12 [00:37\u003c00:06,  3.10s/it]\rFetching 12 files: 100%|██████████| 12/12 [00:37\u003c00:00,  3.10s/it]\n"}
+,{"stream_name":"stdout","time":143.965542319,"data":"[transformers] Passing `generation_config` together with generation-related arguments=({'begin_suppress_tokens', 'suppress_tokens'}) is deprecated and will be removed in future versions. Please pass either a `generation_config` object OR all generation parameters explicitly, but not both.\n"}
+,{"stream_name":"stdout","time":144.168012125,"data":"[transformers] Passing `generation_config` together with generation-related arguments=({'begin_suppress_tokens', 'suppress_tokens'}) is deprecated and will be removed in future versions. Please pass either a `generation_config` object OR all generation parameters explicitly, but not both.\n"}
+,{"stream_name":"stdout","time":145.152412727,"data":"[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer WhisperTokenizer. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.\n"}
+,{"stream_name":"stdout","time":145.354879713,"data":"[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer WhisperTokenizer. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.\n"}
+,{"stream_name":"stdout","time":148.093791422,"data":"[transformers] You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset\n"}
+,{"stream_name":"stdout","time":148.295969618,"data":"[transformers] You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset\n"}
+,{"stream_name":"stdout","time":167.668451473,"data":"50/1000  26s\n"}
+,{"stream_name":"stdout","time":167.874095317,"data":"50/1000  26s\n"}
+,{"stream_name":"stdout","time":215.164050084,"data":"100/1000  73s\n"}
+,{"stream_name":"stdout","time":215.368372016,"data":"100/1000  73s\n"}
+,{"stream_name":"stdout","time":256.860087258,"data":"150/1000  115s\n"}
+,{"stream_name":"stdout","time":257.064220836,"data":"150/1000  115s\n"}
+,{"stream_name":"stdout","time":279.547117667,"data":"200/1000  137s\n"}
+,{"stream_name":"stdout","time":279.74974103,"data":"200/1000  137s\n"}
+,{"stream_name":"stdout","time":309.313558915,"data":"250/1000  167s\n"}
+,{"stream_name":"stdout","time":309.517759189,"data":"250/1000  167s\n"}
+,{"stream_name":"stdout","time":326.708165638,"data":"300/1000  185s\n"}
+,{"stream_name":"stdout","time":326.910481122,"data":"300/1000  185s\n"}
+,{"stream_name":"stdout","time":343.985473708,"data":"350/1000  202s\n"}
+,{"stream_name":"stdout","time":344.189330974,"data":"350/1000  202s\n"}
+,{"stream_name":"stdout","time":358.486379436,"data":"400/1000  216s\n"}
+,{"stream_name":"stdout","time":358.68876573,"data":"400/1000  216s\n"}
+,{"stream_name":"stdout","time":391.140284139,"data":"450/1000  249s\n"}
+,{"stream_name":"stdout","time":391.344819365,"data":"450/1000  249s\n"}
+,{"stream_name":"stdout","time":409.539205261,"data":"500/1000  267s\n"}
+,{"stream_name":"stdout","time":409.741546452,"data":"500/1000  267s\n"}
+,{"stream_name":"stdout","time":424.27900373,"data":"550/1000  282s\n"}
+,{"stream_name":"stdout","time":424.483212748,"data":"550/1000  282s\n"}
+,{"stream_name":"stdout","time":442.476280527,"data":"600/1000  300s\n"}
+,{"stream_name":"stdout","time":442.678644783,"data":"600/1000  300s\n"}
+,{"stream_name":"stdout","time":460.691141138,"data":"650/1000  319s\n"}
+,{"stream_name":"stdout","time":460.897526293,"data":"650/1000  319s\n"}
+,{"stream_name":"stdout","time":474.729853567,"data":"700/1000  333s\n"}
+,{"stream_name":"stdout","time":474.932359771,"data":"700/1000  333s\n"}
+,{"stream_name":"stdout","time":495.383901743,"data":"750/1000  353s\n"}
+,{"stream_name":"stdout","time":495.588585767,"data":"750/1000  353s\n"}
+,{"stream_name":"stdout","time":508.784416454,"data":"800/1000  367s\n"}
+,{"stream_name":"stdout","time":508.98664651,"data":"800/1000  367s\n"}
+,{"stream_name":"stdout","time":536.288485648,"data":"850/1000  394s\n"}
+,{"stream_name":"stdout","time":536.493678446,"data":"850/1000  394s\n"}
+,{"stream_name":"stdout","time":564.241174277,"data":"900/1000  422s\n"}
+,{"stream_name":"stdout","time":564.444225879,"data":"900/1000  422s\n"}
+,{"stream_name":"stdout","time":594.915615376,"data":"950/1000  453s\n"}
+,{"stream_name":"stdout","time":595.120391487,"data":"950/1000  453s\n"}
+,{"stream_name":"stdout","time":616.149255856,"data":"1000/1000  474s\n"}
+,{"stream_name":"stdout","time":616.149916598,"data":"=== done in 474s on cuda: eval/results/m3-whisper-tiny-zeroshot-fallback/predictions.csv\n"}
+,{"stream_name":"stdout","time":616.351181946,"data":"1000/1000  474s\n"}
+,{"stream_name":"stdout","time":616.351212758,"data":"=== done in 474s on cuda: eval/results/m3-whisper-tiny-zeroshot-fallback/predictions.csv\n"}
+,{"stream_name":"stdout","time":619.030184705,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\n"}
+,{"stream_name":"stdout","time":619.030213478,"data":"ModuleNotFoundError: No module named 'wrapt'\n"}
+,{"stream_name":"stdout","time":619.232488963,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\n"}
+,{"stream_name":"stdout","time":619.232519002,"data":"ModuleNotFoundError: No module named 'wrapt'\n"}
+,{"stream_name":"stdout","time":619.379604826,"data":"overall  WER 0.571  CER 0.322  n=1000\n"}
+,{"stream_name":"stdout","time":619.379627947,"data":"domain   clinical             WER 0.629  CER 0.317  n=500\n"}
+,{"stream_name":"stdout","time":619.379632566,"data":"domain   general              WER 0.528  CER 0.325  n=500\n"}
+,{"stream_name":"stdout","time":619.379636352,"data":"accent   hausa                WER 0.558  CER 0.300  n=35\n"}
+,{"stream_name":"stdout","time":619.379639838,"data":"accent   igbo                 WER 0.620  CER 0.358  n=49\n"}
+,{"stream_name":"stdout","time":619.379643454,"data":"accent   swahili              WER 0.398  CER 0.233  n=90\n"}
+,{"stream_name":"stdout","time":619.379646906,"data":"accent   yoruba               WER 0.602  CER 0.343  n=100\n"}
+,{"stream_name":"stdout","time":619.379650846,"data":"accent   zulu                 WER 0.447  CER 0.247  n=34\n"}
+,{"stream_name":"stdout","time":619.398879827,"data":"overall  WER 0.571  CER 0.322  n=1000\n"}
+,{"stream_name":"stdout","time":619.398916509,"data":"domain   clinical             WER 0.629  CER 0.317  n=500\n"}
+,{"stream_name":"stdout","time":619.398921901,"data":"domain   general              WER 0.528  CER 0.325  n=500\n"}
+,{"stream_name":"stdout","time":619.398926417,"data":"accent   hausa                WER 0.558  CER 0.300  n=35\n"}
+,{"stream_name":"stdout","time":619.398930882,"data":"accent   igbo                 WER 0.620  CER 0.358  n=49\n"}
+,{"stream_name":"stdout","time":619.39893543,"data":"accent   swahili              WER 0.398  CER 0.233  n=90\n"}
+,{"stream_name":"stdout","time":619.39893985,"data":"accent   yoruba               WER 0.602  CER 0.343  n=100\n"}
+,{"stream_name":"stdout","time":619.3989443,"data":"accent   zulu                 WER 0.447  CER 0.247  n=34\n"}
+,{"stream_name":"stdout","time":619.39894848,"data":"===== openai/whisper-base --fallback -\u003e /tmp/repo/eval/results/m3-whisper-base-zeroshot-fallback\n"}
+,{"stream_name":"stdout","time":619.465306017,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\n"}
+,{"stream_name":"stdout","time":619.465333372,"data":"ModuleNotFoundError: No module named 'wrapt'\n"}
+,{"stream_name":"stdout","time":619.582594819,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\n"}
+,{"stream_name":"stdout","time":619.582624218,"data":"ModuleNotFoundError: No module named 'wrapt'\n"}
+,{"stream_name":"stdout","time":624.615455526,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stdout","time":624.81753132,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stdout","time":627.83947932,"data":"\rLoading weights:   0%|          | 0/245 [00:00\u003c?, ?it/s]\rLoading weights: 100%|██████████| 245/245 [00:00\u003c00:00, 2851.51it/s]\n"}
+,{"stream_name":"stdout","time":627.957179353,"data":"\rLoading weights:   0%|          | 0/245 [00:00\u003c?, ?it/s]\rLoading weights: 100%|██████████| 245/245 [00:00\u003c00:00, 2851.51it/s]\n"}
+,{"stream_name":"stdout","time":629.6914892,"data":"[transformers] Using `chunk_length_s` is very experimental with seq2seq models. The results will not necessarily be entirely accurate and will have caveats. More information: https://github.com/huggingface/transformers/pull/20104. Ignore this warning with pipeline(..., ignore_warning=True). To use Whisper for long-form transcription, use rather the model's `generate` method directly as the model relies on its own chunking mechanism (cf. Whisper original paper, section 3.8. Long-form Transcription).\n"}
+,{"stream_name":"stdout","time":629.701507373,"data":"=== predicting with openai/whisper-base on cuda: Tesla T4 (16 GB), commit 7dc1099, fallback=True, detect=False\n"}
+,{"stream_name":"stdout","time":629.893840443,"data":"[transformers] Using `chunk_length_s` is very experimental with seq2seq models. The results will not necessarily be entirely accurate and will have caveats. More information: https://github.com/huggingface/transformers/pull/20104. Ignore this warning with pipeline(..., ignore_warning=True). To use Whisper for long-form transcription, use rather the model's `generate` method directly as the model relies on its own chunking mechanism (cf. Whisper original paper, section 3.8. Long-form Transcription).\n"}
+,{"stream_name":"stdout","time":629.893874295,"data":"=== predicting with openai/whisper-base on cuda: Tesla T4 (16 GB), commit 7dc1099, fallback=True, detect=False\n"}
+,{"stream_name":"stdout","time":630.292807829,"data":"[transformers] Passing `generation_config` together with generation-related arguments=({'suppress_tokens', 'begin_suppress_tokens'}) is deprecated and will be removed in future versions. Please pass either a `generation_config` object OR all generation parameters explicitly, but not both.\n"}
+,{"stream_name":"stdout","time":630.49507305,"data":"[transformers] Passing `generation_config` together with generation-related arguments=({'suppress_tokens', 'begin_suppress_tokens'}) is deprecated and will be removed in future versions. Please pass either a `generation_config` object OR all generation parameters explicitly, but not both.\n"}
+,{"stream_name":"stdout","time":631.627667695,"data":"[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer WhisperTokenizer. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.\n"}
+,{"stream_name":"stdout","time":631.829596446,"data":"[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer WhisperTokenizer. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.\n"}
+,{"stream_name":"stdout","time":636.005383959,"data":"[transformers] You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset\n"}
+,{"stream_name":"stdout","time":636.207465112,"data":"[transformers] You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset\n"}
+,{"stream_name":"stdout","time":652.834005117,"data":"50/1000  23s\n"}
+,{"stream_name":"stdout","time":653.036234458,"data":"50/1000  23s\n"}
+,{"stream_name":"stdout","time":685.208037891,"data":"100/1000  55s\n"}
+,{"stream_name":"stdout","time":685.413505688,"data":"100/1000  55s\n"}
+,{"stream_name":"stdout","time":718.813293561,"data":"150/1000  89s\n"}
+,{"stream_name":"stdout","time":719.020739534,"data":"150/1000  89s\n"}
+,{"stream_name":"stdout","time":756.237992804,"data":"200/1000  127s\n"}
+,{"stream_name":"stdout","time":756.444588037,"data":"200/1000  127s\n"}
+,{"stream_name":"stdout","time":788.310434386,"data":"250/1000  159s\n"}
+,{"stream_name":"stdout","time":788.518498044,"data":"250/1000  159s\n"}
+,{"stream_name":"stdout","time":808.11683426,"data":"300/1000  178s\n"}
+,{"stream_name":"stdout","time":808.31936631,"data":"300/1000  178s\n"}
+,{"stream_name":"stdout","time":828.563005552,"data":"350/1000  199s\n"}
+,{"stream_name":"stdout","time":828.770154038,"data":"350/1000  199s\n"}
+,{"stream_name":"stdout","time":848.948230178,"data":"400/1000  219s\n"}
+,{"stream_name":"stdout","time":849.151661612,"data":"400/1000  219s\n"}
+,{"stream_name":"stdout","time":875.62014986,"data":"450/1000  246s\n"}
+,{"stream_name":"stdout","time":875.824839995,"data":"450/1000  246s\n"}
+,{"stream_name":"stdout","time":902.135577435,"data":"500/1000  272s\n"}
+,{"stream_name":"stdout","time":902.338035718,"data":"500/1000  272s\n"}
+,{"stream_name":"stdout","time":924.355069629,"data":"550/1000  295s\n"}
+,{"stream_name":"stdout","time":924.560139217,"data":"550/1000  295s\n"}
+,{"stream_name":"stdout","time":951.137692077,"data":"600/1000  321s\n"}
+,{"stream_name":"stdout","time":951.339865404,"data":"600/1000  321s\n"}
+,{"stream_name":"stdout","time":978.725887568,"data":"650/1000  349s\n"}
+,{"stream_name":"stdout","time":978.935447734,"data":"650/1000  349s\n"}
+,{"stream_name":"stdout","time":1005.21825235,"data":"700/1000  375s\n"}
+,{"stream_name":"stdout","time":1005.420504351,"data":"700/1000  375s\n"}
+,{"stream_name":"stdout","time":1025.905207499,"data":"750/1000  396s\n"}
+,{"stream_name":"stdout","time":1026.111428721,"data":"750/1000  396s\n"}
+,{"stream_name":"stdout","time":1050.37803536,"data":"800/1000  421s\n"}
+,{"stream_name":"stdout","time":1050.580667362,"data":"800/1000  421s\n"}
+,{"stream_name":"stdout","time":1087.549736499,"data":"850/1000  458s\n"}
+,{"stream_name":"stdout","time":1087.755234305,"data":"850/1000  458s\n"}
+,{"stream_name":"stdout","time":1121.670459732,"data":"900/1000  492s\n"}
+,{"stream_name":"stdout","time":1121.876297874,"data":"900/1000  492s\n"}
+,{"stream_name":"stdout","time":1143.926117933,"data":"950/1000  514s\n"}
+,{"stream_name":"stdout","time":1144.12864832,"data":"950/1000  514s\n"}
+,{"stream_name":"stdout","time":1162.597650467,"data":"1000/1000  533s\n"}
+,{"stream_name":"stdout","time":1162.597997383,"data":"=== done in 533s on cuda: eval/results/m3-whisper-base-zeroshot-fallback/predictions.csv\n"}
+,{"stream_name":"stdout","time":1162.803240952,"data":"1000/1000  533s\n"}
+,{"stream_name":"stdout","time":1162.803268046,"data":"=== done in 533s on cuda: eval/results/m3-whisper-base-zeroshot-fallback/predictions.csv\n"}
+,{"stream_name":"stdout","time":1164.069543917,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\n"}
+,{"stream_name":"stdout","time":1164.069569058,"data":"ModuleNotFoundError: No module named 'wrapt'\n"}
+,{"stream_name":"stdout","time":1164.271875624,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\n"}
+,{"stream_name":"stdout","time":1164.271932625,"data":"ModuleNotFoundError: No module named 'wrapt'\n"}
+,{"stream_name":"stdout","time":1164.302414312,"data":"overall  WER 0.464  CER 0.268  n=1000\n"}
+,{"stream_name":"stdout","time":1164.302439809,"data":"domain   clinical             WER 0.520  CER 0.268  n=500\n"}
+,{"stream_name":"stdout","time":1164.302460025,"data":"domain   general              WER 0.422  CER 0.269  n=500\n"}
+,{"stream_name":"stdout","time":1164.302463755,"data":"accent   hausa                WER 0.419  CER 0.224  n=35\n"}
+,{"stream_name":"stdout","time":1164.302466938,"data":"accent   igbo                 WER 0.535  CER 0.329  n=49\n"}
+,{"stream_name":"stdout","time":1164.302469997,"data":"accent   swahili              WER 0.341  CER 0.199  n=90\n"}
+,{"stream_name":"stdout","time":1164.30247306,"data":"accent   yoruba               WER 0.494  CER 0.290  n=100\n"}
+,{"stream_name":"stdout","time":1164.302476293,"data":"accent   zulu                 WER 0.366  CER 0.207  n=34\n"}
+,{"stream_name":"stdout","time":1164.322040352,"data":"overall  WER 0.464  CER 0.268  n=1000\n"}
+,{"stream_name":"stdout","time":1164.322066557,"data":"domain   clinical             WER 0.520  CER 0.268  n=500\n"}
+,{"stream_name":"stdout","time":1164.322072131,"data":"domain   general              WER 0.422  CER 0.269  n=500\n"}
+,{"stream_name":"stdout","time":1164.322076151,"data":"accent   hausa                WER 0.419  CER 0.224  n=35\n"}
+,{"stream_name":"stdout","time":1164.322080204,"data":"accent   igbo                 WER 0.535  CER 0.329  n=49\n"}
+,{"stream_name":"stdout","time":1164.322083962,"data":"accent   swahili              WER 0.341  CER 0.199  n=90\n"}
+,{"stream_name":"stdout","time":1164.322087371,"data":"accent   yoruba               WER 0.494  CER 0.290  n=100\n"}
+,{"stream_name":"stdout","time":1164.322090801,"data":"accent   zulu                 WER 0.366  CER 0.207  n=34\n"}
+,{"stream_name":"stdout","time":1164.322094239,"data":"===== openai/whisper-small --fallback --detect -\u003e /tmp/repo/eval/results/m3-whisper-small-zeroshot-fallback-detect\n"}
+,{"stream_name":"stdout","time":1164.3903603,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\n"}
+,{"stream_name":"stdout","time":1164.39038346,"data":"ModuleNotFoundError: No module named 'wrapt'\n"}
+,{"stream_name":"stdout","time":1164.504556688,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\n"}
+,{"stream_name":"stdout","time":1164.504591428,"data":"ModuleNotFoundError: No module named 'wrapt'\n"}
+,{"stream_name":"stdout","time":1169.323130541,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stdout","time":1169.525527517,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stdout","time":1177.774897853,"data":"\rLoading weights:   0%|          | 0/479 [00:00\u003c?, ?it/s]\rLoading weights:  60%|██████    | 289/479 [00:00\u003c00:00, 2863.16it/s]\rLoading weights: 100%|██████████| 479/479 [00:00\u003c00:00, 2900.75it/s]\n"}
+,{"stream_name":"stdout","time":1177.811826294,"data":"\rLoading weights:   0%|          | 0/479 [00:00\u003c?, ?it/s]\rLoading weights:  60%|██████    | 289/479 [00:00\u003c00:00, 2863.16it/s]\rLoading weights: 100%|██████████| 479/479 [00:00\u003c00:00, 2900.75it/s]\n"}
+,{"stream_name":"stdout","time":1179.880347577,"data":"[transformers] Using `chunk_length_s` is very experimental with seq2seq models. The results will not necessarily be entirely accurate and will have caveats. More information: https://github.com/huggingface/transformers/pull/20104. Ignore this warning with pipeline(..., ignore_warning=True). To use Whisper for long-form transcription, use rather the model's `generate` method directly as the model relies on its own chunking mechanism (cf. Whisper original paper, section 3.8. Long-form Transcription).\n"}
+,{"stream_name":"stdout","time":1179.883454575,"data":"=== predicting with openai/whisper-small on cuda: Tesla T4 (16 GB), commit 7dc1099, fallback=True, detect=True\n"}
+,{"stream_name":"stdout","time":1180.082734607,"data":"[transformers] Using `chunk_length_s` is very experimental with seq2seq models. The results will not necessarily be entirely accurate and will have caveats. More information: https://github.com/huggingface/transformers/pull/20104. Ignore this warning with pipeline(..., ignore_warning=True). To use Whisper for long-form transcription, use rather the model's `generate` method directly as the model relies on its own chunking mechanism (cf. Whisper original paper, section 3.8. Long-form Transcription).\n"}
+,{"stream_name":"stdout","time":1180.082773836,"data":"=== predicting with openai/whisper-small on cuda: Tesla T4 (16 GB), commit 7dc1099, fallback=True, detect=True\n"}
+,{"stream_name":"stdout","time":1180.926728945,"data":"[transformers] Passing `generation_config` together with generation-related arguments=({'begin_suppress_tokens', 'suppress_tokens'}) is deprecated and will be removed in future versions. Please pass either a `generation_config` object OR all generation parameters explicitly, but not both.\n"}
+,{"stream_name":"stdout","time":1181.129010983,"data":"[transformers] Passing `generation_config` together with generation-related arguments=({'begin_suppress_tokens', 'suppress_tokens'}) is deprecated and will be removed in future versions. Please pass either a `generation_config` object OR all generation parameters explicitly, but not both.\n"}
+,{"stream_name":"stdout","time":1182.112184534,"data":"[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer WhisperTokenizer. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.\n"}
+,{"stream_name":"stdout","time":1182.314636743,"data":"[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer WhisperTokenizer. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.\n"}
+,{"stream_name":"stdout","time":1256.141793901,"data":"[transformers] You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset\n"}
+,{"stream_name":"stdout","time":1256.347930677,"data":"[transformers] You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset\n"}
+,{"stream_name":"stdout","time":1340.4498992,"data":"50/1000  161s\n"}
+,{"stream_name":"stdout","time":1340.655744994,"data":"50/1000  161s\n"}
+,{"stream_name":"stdout","time":1537.466552046,"data":"100/1000  358s\n"}
+,{"stream_name":"stdout","time":1537.672111598,"data":"100/1000  358s\n"}
+,{"stream_name":"stdout","time":1707.280388087,"data":"150/1000  527s\n"}
+,{"stream_name":"stdout","time":1707.488345973,"data":"150/1000  527s\n"}
+,{"stream_name":"stdout","time":1954.572667106,"data":"200/1000  775s\n"}
+,{"stream_name":"stdout","time":1954.778505339,"data":"200/1000  775s\n"}
+,{"stream_name":"stdout","time":2119.742627983,"data":"250/1000  940s\n"}
+,{"stream_name":"stdout","time":2119.951053453,"data":"250/1000  940s\n"}
+,{"stream_name":"stdout","time":2277.986076449,"data":"300/1000  1098s\n"}
+,{"stream_name":"stdout","time":2278.194266441,"data":"300/1000  1098s\n"}
+,{"stream_name":"stdout","time":2526.572876137,"data":"350/1000  1347s\n"}
+,{"stream_name":"stdout","time":2526.777854773,"data":"350/1000  1347s\n"}
+,{"stream_name":"stdout","time":2761.166006378,"data":"400/1000  1581s\n"}
+,{"stream_name":"stdout","time":2761.374395182,"data":"400/1000  1581s\n"}
+,{"stream_name":"stdout","time":3003.608898924,"data":"450/1000  1824s\n"}
+,{"stream_name":"stdout","time":3003.814666184,"data":"450/1000  1824s\n"}
+,{"stream_name":"stdout","time":3131.708223783,"data":"500/1000  1952s\n"}
+,{"stream_name":"stdout","time":3131.914252301,"data":"500/1000  1952s\n"}
+,{"stream_name":"stdout","time":3368.75367224,"data":"550/1000  2189s\n"}
+,{"stream_name":"stdout","time":3368.960224057,"data":"550/1000  2189s\n"}
+,{"stream_name":"stdout","time":3544.332143552,"data":"600/1000  2364s\n"}
+,{"stream_name":"stdout","time":3544.540571233,"data":"600/1000  2364s\n"}
+,{"stream_name":"stdout","time":3889.389531697,"data":"650/1000  2709s\n"}
+,{"stream_name":"stdout","time":3889.595848588,"data":"650/1000  2709s\n"}
+,{"stream_name":"stdout","time":4068.354497152,"data":"700/1000  2888s\n"}
+,{"stream_name":"stdout","time":4068.56109281,"data":"700/1000  2888s\n"}
+,{"stream_name":"stdout","time":4170.851550403,"data":"750/1000  2991s\n"}
+,{"stream_name":"stdout","time":4171.057858282,"data":"750/1000  2991s\n"}
+,{"stream_name":"stdout","time":4284.271558736,"data":"800/1000  3104s\n"}
+,{"stream_name":"stdout","time":4284.480284182,"data":"800/1000  3104s\n"}
+,{"stream_name":"stdout","time":4558.637995542,"data":"850/1000  3379s\n"}
+,{"stream_name":"stdout","time":4558.846638198,"data":"850/1000  3379s\n"}
+,{"stream_name":"stdout","time":4750.540524408,"data":"900/1000  3571s\n"}
+,{"stream_name":"stdout","time":4750.746845922,"data":"900/1000  3571s\n"}
+,{"stream_name":"stdout","time":4988.199590848,"data":"950/1000  3808s\n"}
+,{"stream_name":"stdout","time":4988.408157768,"data":"950/1000  3808s\n"}
+,{"stream_name":"stdout","time":5212.111155851,"data":"1000/1000  4032s\n"}
+,{"stream_name":"stdout","time":5212.111911895,"data":"=== done in 4032s on cuda: eval/results/m3-whisper-small-zeroshot-fallback-detect/predictions.csv\n"}
+,{"stream_name":"stdout","time":5212.31824249,"data":"1000/1000  4032s\n"}
+,{"stream_name":"stdout","time":5212.318270402,"data":"=== done in 4032s on cuda: eval/results/m3-whisper-small-zeroshot-fallback-detect/predictions.csv\n"}
+,{"stream_name":"stdout","time":5213.553320227,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\n"}
+,{"stream_name":"stdout","time":5213.553347215,"data":"ModuleNotFoundError: No module named 'wrapt'\n"}
+,{"stream_name":"stdout","time":5213.755690744,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\n"}
+,{"stream_name":"stdout","time":5213.755743516,"data":"ModuleNotFoundError: No module named 'wrapt'\n"}
+,{"stream_name":"stdout","time":5213.778295775,"data":"overall  WER 0.464  CER 0.297  n=1000\n"}
+,{"stream_name":"stdout","time":5213.778322069,"data":"domain   clinical             WER 0.516  CER 0.295  n=500\n"}
+,{"stream_name":"stdout","time":5213.778332339,"data":"domain   general              WER 0.426  CER 0.298  n=500\n"}
+,{"stream_name":"stdout","time":5213.778335642,"data":"accent   hausa                WER 0.358  CER 0.181  n=35\n"}
+,{"stream_name":"stdout","time":5213.778338551,"data":"accent   igbo                 WER 0.631  CER 0.423  n=49\n"}
+,{"stream_name":"stdout","time":5213.778341452,"data":"accent   swahili              WER 0.380  CER 0.248  n=90\n"}
+,{"stream_name":"stdout","time":5213.77834428,"data":"accent   yoruba               WER 0.520  CER 0.346  n=100\n"}
+,{"stream_name":"stdout","time":5213.778347158,"data":"accent   zulu                 WER 0.308  CER 0.172  n=34\n"}
+,{"stream_name":"stdout","time":5213.797562538,"data":"overall  WER 0.464  CER 0.297  n=1000\n"}
+,{"stream_name":"stdout","time":5213.797588132,"data":"domain   clinical             WER 0.516  CER 0.295  n=500\n"}
+,{"stream_name":"stdout","time":5213.797592828,"data":"domain   general              WER 0.426  CER 0.298  n=500\n"}
+,{"stream_name":"stdout","time":5213.797596734,"data":"accent   hausa                WER 0.358  CER 0.181  n=35\n"}
+,{"stream_name":"stdout","time":5213.797600643,"data":"accent   igbo                 WER 0.631  CER 0.423  n=49\n"}
+,{"stream_name":"stdout","time":5213.797604491,"data":"accent   swahili              WER 0.380  CER 0.248  n=90\n"}
+,{"stream_name":"stdout","time":5213.797608429,"data":"accent   yoruba               WER 0.520  CER 0.346  n=100\n"}
+,{"stream_name":"stdout","time":5213.797612446,"data":"accent   zulu                 WER 0.308  CER 0.172  n=34\n"}
+,{"stream_name":"stdout","time":5213.847388304,"data":"total 64\r\n"}
+,{"stream_name":"stdout","time":5213.847420785,"data":"drwxr-xr-x 5 root root  4096 Nov 24 21:56 .\r\n"}
+,{"stream_name":"stdout","time":5213.847424221,"data":"drwxr-xr-x 8 root root  4096 Nov 24 20:29 ..\r\n"}
+,{"stream_name":"stdout","time":5213.847426854,"data":"drwxr-xr-x 2 root root  4096 Nov 24 20:49 m3-whisper-base-zeroshot-fallback\r\n"}
+,{"stream_name":"stdout","time":5213.847429443,"data":"drwxr-xr-x 2 root root  4096 Nov 24 21:56 m3-whisper-small-zeroshot-fallback-detect\r\n"}
+,{"stream_name":"stdout","time":5213.847432392,"data":"drwxr-xr-x 2 root root  4096 Nov 24 20:39 m3-whisper-tiny-zeroshot-fallback\r\n"}
+,{"stream_name":"stdout","time":5213.847448455,"data":"-rw-r--r-- 1 root root  2232 Nov 24 20:29 machine-20261124T202947.log\r\n"}
+,{"stream_name":"stdout","time":5213.847452244,"data":"-rw-r--r-- 1 root root 28615 Nov 24 21:56 __notebook__.ipynb\r\n"}
+,{"stream_name":"stdout","time":5213.847456203,"data":"-rw-r--r-- 1 root root  2762 Nov 24 20:49 stdout-whisper-base-zeroshot-fallback.log\r\n"}
+,{"stream_name":"stdout","time":5213.847460255,"data":"-rw-r--r-- 1 root root  2870 Nov 24 21:56 stdout-whisper-small-zeroshot-fallback-detect.log\r\n"}
+,{"stream_name":"stdout","time":5213.847464166,"data":"-rw-r--r-- 1 root root  3290 Nov 24 20:39 stdout-whisper-tiny-zeroshot-fallback.log\r\n"}
+,{"stream_name":"stdout","time":5213.847468327,"data":"overall  WER 0.464  CER 0.268  n=1000\r\n"}
+,{"stream_name":"stdout","time":5213.847472256,"data":"overall  WER 0.464  CER 0.297  n=1000\r\n"}
+,{"stream_name":"stdout","time":5213.847475603,"data":"overall  WER 0.571  CER 0.322  n=1000\r\n"}
+,{"stream_name":"stderr","time":5216.85194456,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":5216.851975777,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":5217.039029644,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":5217.039071057,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":5217.831989606,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":5217.92258656,"data":"[NbConvertApp] Writing 20991 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":5220.420460852,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":5220.974145228,"data":"[NbConvertApp] Writing 296140 bytes to __results__.html\n"}
+]

@@ -1,0 +1,17 @@
+{
+  "git_commit": "7dc10993196ba8854f23198d6182f63e0e13a222",
+  "device": "cuda: Tesla T4 (16 GB)",
+  "host": "b69e255f32e3",
+  "python": "3.13.16",
+  "torch": "2.15.0+cu132",
+  "transformers": "5.24.0",
+  "started": "2026-11-24T20:40:06+00:00",
+  "model": "openai/whisper-base",
+  "generate_kwargs": {
+    "language": "en",
+    "task": "transcribe",
+    "temperature": "(0.0, 0.2, 0.4, 0.6, 0.8, 1.0)",
+    "compression_ratio_threshold": "1.35",
+    "logprob_threshold": "-1.0"
+  }
+}

@@ -1,0 +1,40 @@
+Error in sitecustomize; set PYTHONVERBOSE for traceback:
+ModuleNotFoundError: No module named 'wrapt'
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/479 [00:00<?, ?it/s]Loading weights:  60%|██████    | 289/479 [00:00<00:00, 2863.16it/s]Loading weights: 100%|██████████| 479/479 [00:00<00:00, 2900.75it/s]
+[transformers] Using `chunk_length_s` is very experimental with seq2seq models. The results will not necessarily be entirely accurate and will have caveats. More information: https://github.com/huggingface/transformers/pull/20104. Ignore this warning with pipeline(..., ignore_warning=True). To use Whisper for long-form transcription, use rather the model's `generate` method directly as the model relies on its own chunking mechanism (cf. Whisper original paper, section 3.8. Long-form Transcription).
+=== predicting with openai/whisper-small on cuda: Tesla T4 (16 GB), commit 7dc1099, fallback=True, detect=True
+[transformers] Passing `generation_config` together with generation-related arguments=({'begin_suppress_tokens', 'suppress_tokens'}) is deprecated and will be removed in future versions. Please pass either a `generation_config` object OR all generation parameters explicitly, but not both.
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer WhisperTokenizer. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+[transformers] You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+50/1000  161s
+100/1000  358s
+150/1000  527s
+200/1000  775s
+250/1000  940s
+300/1000  1098s
+350/1000  1347s
+400/1000  1581s
+450/1000  1824s
+500/1000  1952s
+550/1000  2189s
+600/1000  2364s
+650/1000  2709s
+700/1000  2888s
+750/1000  2991s
+800/1000  3104s
+850/1000  3379s
+900/1000  3571s
+950/1000  3808s
+1000/1000  4032s
+=== done in 4032s on cuda: eval/results/m3-whisper-small-zeroshot-fallback-detect/predictions.csv
+Error in sitecustomize; set PYTHONVERBOSE for traceback:
+ModuleNotFoundError: No module named 'wrapt'
+overall  WER 0.464  CER 0.297  n=1000
+domain   clinical             WER 0.516  CER 0.295  n=500
+domain   general              WER 0.426  CER 0.298  n=500
+accent   hausa                WER 0.358  CER 0.181  n=35
+accent   igbo                 WER 0.631  CER 0.423  n=49
+accent   swahili              WER 0.380  CER 0.248  n=90
+accent   yoruba               WER 0.520  CER 0.346  n=100
+accent   zulu                 WER 0.308  CER 0.172  n=34

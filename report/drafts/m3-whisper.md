@@ -8,7 +8,7 @@ ai-use: Claude drafted the text, table and slide plan from the committed run rec
 
 # Section B draft: M3, Whisper zero-shot and full fine-tune
 
-Every number below comes from a committed run record: `eval/results/m3-*/run.md`, `scores.json` and `failure-checks.csv`. Numbers marked **[pending]** wait for the runs now on Kaggle.
+Every number below comes from a committed run record: `eval/results/m3-*/run.md`, `scores.json` and `failure-checks.csv`. Numbers marked **[pending]** wait for the 8,000-step run, still on Kaggle.
 
 ---
 
@@ -31,10 +31,10 @@ All runs force English output. They use Whisper's temperature fallback, which re
 
 | Model | Params | WER | CER | Clinical WER | General WER |
 |---|---|---|---|---|---|
-| whisper-tiny, zero-shot | 39M | [pending] | [pending] | [pending] | [pending] |
-| whisper-base, zero-shot | 74M | [pending] | [pending] | [pending] | [pending] |
+| whisper-tiny, zero-shot | 39M | 0.571 | 0.322 | 0.629 | 0.528 |
+| whisper-base, zero-shot | 74M | 0.464 | 0.268 | 0.520 | 0.423 |
 | whisper-small, zero-shot | 244M | 0.350 | 0.204 | 0.389 | 0.322 |
-| whisper-small, zero-shot, language detected | 244M | [pending] | [pending] | [pending] | [pending] |
+| whisper-small, zero-shot, language detected | 244M | 0.464 | 0.297 | 0.516 | 0.426 |
 | whisper-large-v3-turbo, zero-shot | 809M | 0.293 | 0.174 | 0.345 | 0.255 |
 | **whisper-small, fine-tuned (4k steps)** | 244M | **0.156** | **0.071** | **0.200** | **0.123** |
 | whisper-small, fine-tuned (8k steps) | 244M | [pending] | [pending] | [pending] | [pending] |
@@ -42,7 +42,7 @@ All runs force English output. They use Whisper's temperature fallback, which re
 *Table 1: Word and character error rates on the 1,000-clip test set. Every run uses temperature fallback and, unless stated otherwise, forced English.*
 
 **What size buys, and what training buys.**
-- **Size:** without training, a larger model helps, but slowly. Turbo, with 3.3 times the parameters, gains 5.7 points over small. [Add tiny and base when the runs finish.]
+- **Size:** without training, a larger model helps, but each step helps less. Tiny to base gains 10.7 points and base to small 11.4, but turbo, with 3.3 times the parameters of small, gains only 5.7.
 - **Training:** fine-tuning small on AfriSpeech gains 19.4 points, cutting its error by more than half. It ends 13.7 points below turbo.
 - **By accent:** every accent with at least 30 test clips improved. Swahili fell from 0.269 to 0.111, and Igbo, the hardest, from 0.404 to 0.158.
 
@@ -50,10 +50,12 @@ All runs force English output. They use Whisper's temperature fallback, which re
 - **Repetition loops:** clips with WER above 1 fell from 45 to 10.
 - **Dictated punctuation:** dictating doctors say "comma" and "full stop", and AfriSpeech's references don't write them as words. Zero-shot Whisper wrote them as words in 347 clips. After fine-tuning, only 12 clips still did.
 
-These are style errors, not hearing errors. A small amount of in-domain training removes them, but no amount of model size does: turbo wrote the punctuation words in even more clips, 383.
+These are style errors, not hearing errors. A small amount of in-domain training removes them, but model size does not. Bigger models loop less, but they write the punctuation words in more clips (224 for tiny, 383 for turbo), because they copy the dictation more faithfully.
 
 | Model | Clips with WER > 1 | Clips with spoken punctuation not in the reference |
 |---|---|---|
+| whisper-tiny, zero-shot | 123 | 224 |
+| whisper-base, zero-shot | 77 | 254 |
 | whisper-small, zero-shot | 45 | 347 |
 | whisper-large-v3-turbo, zero-shot | 35 | 383 |
 | whisper-small, fine-tuned | 10 | 12 |
@@ -65,7 +67,7 @@ These are style errors, not hearing errors. A small amount of in-domain training
 - **Training had not converged.** Dev WER was still falling at step 4,000 (0.164 → 0.161). The 8,000-step run tests whether more training helps: [pending].
 - **Limits:** these are single runs with one seed. The dev check used only 200 clips.
 
-**Language detection.** [pending: forced English vs letting Whisper detect the language. Accented English is sometimes mistaken for another language. Give one sentence with the result.]
+**Language detection.** Forcing English matters. When whisper-small detected the language itself, WER rose from 0.350 to 0.464: it took some accented English for another language and wrote 66 clips in other scripts, such as Arabic, Bengali and Georgian, and loops rose from 45 to 75 clips. Every AfriSpeech clip is English, so all our runs force it.
 
 ---
 
@@ -76,7 +78,7 @@ These are style errors, not hearing errors. A small amount of in-domain training
 **Story hook:** a new nurse transferred from abroad is skilled, but on day one mishears local names and writes "comma" when the doctor says it. After a few weeks on the ward, she stops. Zero-shot Whisper is that nurse on day one. The fine-tuned model is the same nurse after training on our ward's recordings.
 
 **On the slide:**
-1. A bar chart of WER: small zero-shot 0.350, turbo zero-shot 0.293, small fine-tuned **0.156**. Add tiny and base when they finish.
+1. A bar chart of WER: tiny 0.571, base 0.464, small 0.350, turbo 0.293 (all zero-shot), then small fine-tuned **0.156**.
 2. Build: two before → after counts.
    - "Repetition loops: 45 → 10"
    - "'Comma' / 'full stop' written as words: 347 → 12"
