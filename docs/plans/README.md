@@ -6,3 +6,4 @@ One plan per GitHub issue, written by the `start-task` skill from [`TEMPLATE.md`
 
 | Title | owner | issue | status |
 |---|---|---|---|
+| [Reading note: Liu et al. 2024: Whisper fine-tuning for low-resource ASR](15-liu-reading-note.md) | Joseph Etse | #15 | done |
