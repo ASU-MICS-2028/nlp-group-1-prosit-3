@@ -20,6 +20,7 @@ One summary per lecture, paper or prosit. Raw transcripts are never committed (s
 | [Lecture 10: Harness Engineering, Choosing Models with Evals; Prosit 2 Wrap-up and the Viva](lecture-10.md) | Lecture 10 recording |
 | [Lecture 11: Why Experience Still Matters, AI in Ghana's Market, Enterprise Harnesses and Multi-Voice Text-to-Speech](lecture-11.md) | Lecture 11 recording |
 | [Lecture 12: Speech Recognition Basics (Challenges, Mel Spectrograms, CNNs, RNNs, Encoder-Decoder); Prosit 3 Launch](lecture-12.md) | Lecture 12 recording (2026-11-09) |
+| [Liu et al. 2024: fine-tuning makes Whisper good at low-resource languages, and which fine-tuning strategy to pick](liu-2024-whisper-fine-tuning.md) | Yunpeng Liu, Xukui Yang and Dan Qu. 2024. Exploration of Whisper fine-tuning strategies for low-resource ASR. EURASIP Journal on Audio, Speech, and Music Processing, 2024(1):29. doi:10.1186/s13636-024-00349-3 (open access, CC BY 4.0) |
 | [What we did in Prosit 1 (Ewe language models) and what carried over](prosit-1.md) | Prosit 1 repo and reports (summary carried over from the Prosit 2 repo) |
 | [What we did in Prosit 2 (a platform that builds backend APIs) and what carries over](prosit-2.md) | Prosit 2 repo, https://github.com/ASU-MICS-2028/nlp-group-1-prosit-2 (README, decisions 0013, 0050, 0051, 0063) |
 | [The Prosit 3 brief - Ayamra hospital dictation (supervised speech recognition with transformers)](prosit-3-brief.md) | Grad NLP Prosit 3 brief (PDF on Canvas) and Lecture 12 (2026-11-09) |

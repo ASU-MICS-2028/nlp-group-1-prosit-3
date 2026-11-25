@@ -20,6 +20,7 @@ New note: copy [`TEMPLATE.md`](TEMPLATE.md), then run `python3 scripts/build_ind
 | [Always put a backend between the user's page and the agent, so input can be cleaned and prompt injection blocked](backend-between-page-and-agent.md) | [security, lecture-08] | NLP Group 1 |
 | [Backpropagation computes the gradients; gradient descent uses them to update every weight](backprop-and-gradient-descent.md) | [training, lecture-03-part-2] | NLP Group 1 |
 | [Byte pair encoding builds a subword vocabulary by repeatedly merging the most frequent adjacent pair](byte-pair-encoding.md) | [tokenisation, lecture-09] | NLP Group 1 |
+| [Fine-tuning every weight can make a model forget what it could do before](catastrophic-forgetting.md) | [fine-tuning, M3, M4] | Joseph Etse |
 | [Chatbots do not learn from conversations: their weights are frozen, so memory is only the context](chatbots-dont-learn-after-training.md) | [learning, lecture-03-part-1] | NLP Group 1 |
 | [When an API limits input size, split the input into chunks, process each, and join the results](chunk-long-input.md) | [deployment, lecture-11] | NLP Group 1 |
 | [Cite results and others' claims; general knowledge in your own words needs no citation](cite-claims-not-general-knowledge.md) | [rules, report] | Joseph Etse |
@@ -43,6 +44,7 @@ New note: copy [`TEMPLATE.md`](TEMPLATE.md), then run `python3 scripts/build_ind
 | [A languageless LLM would keep knowledge and reasoning in a shared core, with each language as a thin layer](languageless-llm.md) | [multilingual, lecture-03-part-1] | NLP Group 1 |
 | [A language model outputs a probability distribution over the vocabulary, not a single token](lm-outputs-a-distribution.md) | [language-models, lecture-03-part-2] | NLP Group 1 |
 | [LoRA fine-tunes a big model by training two small matrices instead of the full weights](lora.md) | [fine-tuning, M4] | Joseph Etse |
+| [A speech encoder's lower layers learn sounds shared by all languages, so fine-tuning can leave them frozen](lower-layers-learn-shared-sounds.md) | [fine-tuning, whisper, M3] | Joseph Etse |
 | [Measure before adding complexity: a simpler design often wins](measure-before-adding-complexity.md) | [modelling, prosit-2] | Joseph Etse |
 | [A mel spectrogram turns raw audio into a time-by-frequency picture that models read](mel-spectrogram.md) | [asr, features] | Joseph Etse |
 | [Model merging combines two fine-tuned models of the same architecture into one that does both tasks](model-merging.md) | [training, lecture-03-part-1] | NLP Group 1 |
