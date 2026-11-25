@@ -1,0 +1,30 @@
+Error in sitecustomize; set PYTHONVERBOSE for traceback:
+ModuleNotFoundError: No module named 'wrapt'
+Loading weights:   0%|          | 0/479 [00:00<?, ?it/s]Loading weights:  12%|█▏        | 56/479 [00:00<00:00, 548.93it/s]Loading weights:  27%|██▋       | 128/479 [00:00<00:00, 628.71it/s]Loading weights:  42%|████▏     | 201/479 [00:00<00:00, 669.82it/s]Loading weights:  59%|█████▉    | 284/479 [00:00<00:00, 731.73it/s]Loading weights:  78%|███████▊  | 376/479 [00:00<00:00, 792.12it/s]Loading weights: 100%|██████████| 479/479 [00:00<00:00, 786.27it/s]
+[transformers] Using `chunk_length_s` is very experimental with seq2seq models. The results will not necessarily be entirely accurate and will have caveats. More information: https://github.com/huggingface/transformers/pull/20104. Ignore this warning with pipeline(..., ignore_warning=True). To use Whisper for long-form transcription, use rather the model's `generate` method directly as the model relies on its own chunking mechanism (cf. Whisper original paper, section 3.8. Long-form Transcription).
+=== predicting with checkpoints/whisper-small-afrispeech-8k/best on cuda: Tesla T4 (16 GB), commit 810230a, fallback=True, detect=False
+Fetching 12 files:   0%|          | 0/12 [00:00<?, ?it/s]Fetching 12 files:   8%|▊         | 1/12 [00:11<02:03, 11.23s/it]Fetching 12 files:  17%|█▋        | 2/12 [00:18<01:29,  8.97s/it]Fetching 12 files:  33%|███▎      | 4/12 [00:23<00:40,  5.03s/it]Fetching 12 files:  42%|████▏     | 5/12 [00:28<00:34,  4.89s/it]Fetching 12 files:  50%|█████     | 6/12 [00:31<00:25,  4.22s/it]Fetching 12 files:  58%|█████▊    | 7/12 [00:34<00:19,  3.87s/it]Fetching 12 files:  67%|██████▋   | 8/12 [00:44<00:23,  5.88s/it]Fetching 12 files:  75%|███████▌  | 9/12 [00:55<00:21,  7.20s/it]Fetching 12 files: 100%|██████████| 12/12 [00:55<00:00,  4.59s/it]
+[transformers] Passing `generation_config` together with generation-related arguments=({'suppress_tokens', 'begin_suppress_tokens'}) is deprecated and will be removed in future versions. Please pass either a `generation_config` object OR all generation parameters explicitly, but not both.
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer WhisperTokenizer. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+[transformers] You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+50/1000  45s
+100/1000  90s
+150/1000  172s
+200/1000  226s
+250/1000  277s
+300/1000  317s
+350/1000  358s
+400/1000  397s
+450/1000  440s
+500/1000  483s
+550/1000  528s
+600/1000  571s
+650/1000  617s
+700/1000  659s
+750/1000  699s
+800/1000  740s
+850/1000  790s
+900/1000  842s
+950/1000  879s
+1000/1000  918s
+=== done in 918s on cuda: eval/results/m3-whisper-small-afrispeech-8k/predictions.csv

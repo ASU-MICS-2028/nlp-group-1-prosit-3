@@ -39,6 +39,7 @@ New note: copy [`TEMPLATE.md`](TEMPLATE.md), then run `python3 scripts/build_ind
 | [In complex systems, experience finds bugs that prompting alone misses](experience-beats-prompting-in-complex-systems.md) | [ai-use, lecture-11] | NLP Group 1 |
 | [Hallucination is confident, fluent output that is wrong, because the model fills gaps with likely content](hallucination.md) | [llm-behaviour, lecture-04] | NLP Group 1 |
 | [How to score a model on the shared test set](how-to-score-a-model.md) | [evaluation, howto, s0] | Joseph Etse |
+| [Train on Kaggle's free GPUs, with every run's logs saved as proof](how-to-train-on-kaggle.md) | [gpu, kaggle, how-to] | Joseph Etse |
 | [Human-in-the-loop means people check AI output they can actually judge before it is used](human-in-the-loop.md) | [ai-use, lecture-07] | NLP Group 1 |
 | [Instruction tuning (SFT) fine-tunes a pre-trained model on instruction-answer pairs so it follows requests](instruction-tuning.md) | [post-training, lecture-04] | NLP Group 1 |
 | [A languageless LLM would keep knowledge and reasoning in a shared core, with each language as a thin layer](languageless-llm.md) | [multilingual, lecture-03-part-1] | NLP Group 1 |

@@ -1,0 +1,17 @@
+{
+  "git_commit": "bded701b841268db131aa36ce472aa4bbf0d0463",
+  "device": "cuda: Tesla T4 (16 GB)",
+  "host": "0da7b4962288",
+  "python": "3.13.16",
+  "torch": "2.15.0+cu132",
+  "transformers": "5.24.0",
+  "started": "2026-11-24T16:41:36+00:00",
+  "model": "checkpoints/whisper-small-afrispeech/best",
+  "generate_kwargs": {
+    "language": "en",
+    "task": "transcribe",
+    "temperature": "(0.0, 0.2, 0.4, 0.6, 0.8, 1.0)",
+    "compression_ratio_threshold": "1.35",
+    "logprob_threshold": "-1.0"
+  }
+}

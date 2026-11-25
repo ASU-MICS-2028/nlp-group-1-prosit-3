@@ -1,0 +1,25 @@
+{
+  "git_commit": "bded701b841268db131aa36ce472aa4bbf0d0463",
+  "device": "cuda: Tesla T4 (16 GB)",
+  "host": "0da7b4962288",
+  "python": "3.13.16",
+  "torch": "2.15.0+cu132",
+  "transformers": "5.24.0",
+  "started": "2026-11-24T14:10:56+00:00",
+  "command_args": {
+    "model": "openai/whisper-small",
+    "train_split": "train",
+    "train_files": null,
+    "steps": 4000,
+    "batch": 8,
+    "accumulate": 2,
+    "lr": 1e-05,
+    "warmup": 500,
+    "eval_every": 500,
+    "eval_clips": 200,
+    "max_hours": 10.0,
+    "name": "whisper-small-afrispeech",
+    "seed": 42
+  },
+  "resumed_from_step": 0
+}

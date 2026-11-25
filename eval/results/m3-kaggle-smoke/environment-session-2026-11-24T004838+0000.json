@@ -1,0 +1,25 @@
+{
+  "git_commit": "ca0ef7a2a8d127e27f579b2d5282085228f7f702",
+  "device": "cuda: Tesla T4 (16 GB)",
+  "host": "7bfb25702b61",
+  "python": "3.13.16",
+  "torch": "2.15.0+cu132",
+  "transformers": "5.24.0",
+  "started": "2026-11-24T00:48:38+00:00",
+  "command_args": {
+    "model": "openai/whisper-small",
+    "train_split": "train",
+    "train_files": 1,
+    "steps": 20,
+    "batch": 8,
+    "accumulate": 2,
+    "lr": 1e-05,
+    "warmup": 500,
+    "eval_every": 10,
+    "eval_clips": 10,
+    "max_hours": null,
+    "name": "kaggle-smoke",
+    "seed": 42
+  },
+  "resumed_from_step": 0
+}

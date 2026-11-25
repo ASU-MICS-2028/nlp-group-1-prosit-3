@@ -1,0 +1,2 @@
+predictions,clips_wer_over_1,spoken_punctuation_not_in_reference
+eval/results/m3-whisper-small-afrispeech-8k/predictions.csv,11,9

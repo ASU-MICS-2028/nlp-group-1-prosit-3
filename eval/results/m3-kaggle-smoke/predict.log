@@ -1,0 +1,22 @@
+=== predicting with checkpoints/kaggle-smoke/best on cuda: Tesla T4 (16 GB), commit ca0ef7a, fallback=True
+50/1000  47s
+100/1000  93s
+150/1000  161s
+200/1000  229s
+250/1000  274s
+300/1000  315s
+350/1000  358s
+400/1000  399s
+450/1000  455s
+500/1000  501s
+550/1000  546s
+600/1000  593s
+650/1000  650s
+700/1000  693s
+750/1000  735s
+800/1000  777s
+850/1000  828s
+900/1000  883s
+950/1000  922s
+1000/1000  974s
+=== done in 974s on cuda: eval/results/m3-kaggle-smoke/predictions.csv
