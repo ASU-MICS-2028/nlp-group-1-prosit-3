@@ -8,7 +8,7 @@ ai-use: Claude drafted the text, table and slide plan from the committed run rec
 
 # Section B draft: M3, Whisper zero-shot and full fine-tune
 
-Every number below comes from a committed run record: `eval/results/m3-*/run.md`, `scores.json` and `failure-checks.csv`. Numbers marked **[pending]** wait for the 8,000-step run, still on Kaggle.
+Every number below comes from a committed run record: `eval/results/m3-*/run.md`, `scores.json` and `failure-checks.csv`. All runs are finished; nothing is pending.
 
 ---
 
@@ -37,7 +37,7 @@ All runs force English output. They use Whisper's temperature fallback, which re
 | whisper-small, zero-shot, language detected | 244M | 0.464 | 0.297 | 0.516 | 0.426 |
 | whisper-large-v3-turbo, zero-shot | 809M | 0.293 | 0.174 | 0.345 | 0.255 |
 | **whisper-small, fine-tuned (4k steps)** | 244M | **0.156** | **0.071** | **0.200** | **0.123** |
-| whisper-small, fine-tuned (8k steps) | 244M | [pending] | [pending] | [pending] | [pending] |
+| whisper-small, fine-tuned (8k steps) | 244M | 0.152 | 0.070 | 0.194 | 0.121 |
 
 *Table 1: Word and character error rates on the 1,000-clip test set. Every run uses temperature fallback and, unless stated otherwise, forced English.*
 
@@ -64,7 +64,7 @@ These are style errors, not hearing errors. A small amount of in-domain training
 
 **What remains.**
 - **Clinical speech is still the hardest.** Its WER is 0.200 against 0.123 for general speech: drug names, doses and medical terms. The error analysis (Section B.y) breaks this down.
-- **Training had not converged.** Dev WER was still falling at step 4,000 (0.164 → 0.161). The 8,000-step run tests whether more training helps: [pending].
+- **Training had not converged.** Dev WER was still falling at step 4,000 (0.164 → 0.161). Training for 8,000 steps instead (5.6 GPU hours) brought test WER only to 0.152, a gain of 0.4 points for double the cost and within what one seed can show. Most of the gain comes in the first 4,000 steps.
 - **Limits:** these are single runs with one seed. The dev check used only 200 clips.
 
 **Language detection.** Forcing English matters. When whisper-small detected the language itself, WER rose from 0.350 to 0.464: it took some accented English for another language and wrote 66 clips in other scripts, such as Arabic, Bengali and Georgian, and loops rose from 45 to 75 clips. Every AfriSpeech clip is English, so all our runs force it.

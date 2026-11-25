@@ -1,0 +1,22 @@
+=== predicting with checkpoints/whisper-small-afrispeech-8k/best on cuda: Tesla T4 (16 GB), commit 810230a, fallback=True, detect=False
+50/1000  45s
+100/1000  90s
+150/1000  172s
+200/1000  226s
+250/1000  277s
+300/1000  317s
+350/1000  358s
+400/1000  397s
+450/1000  440s
+500/1000  483s
+550/1000  528s
+600/1000  571s
+650/1000  617s
+700/1000  659s
+750/1000  699s
+800/1000  740s
+850/1000  790s
+900/1000  842s
+950/1000  879s
+1000/1000  918s
+=== done in 918s on cuda: eval/results/m3-whisper-small-afrispeech-8k/predictions.csv
