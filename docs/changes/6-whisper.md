@@ -2,7 +2,7 @@
 title: "M3: Whisper zero-shot (four sizes) and full fine-tune of whisper-small on Kaggle"
 owner: Joseph Etse
 issue: "#6"
-pr: "#TBD"
+pr: "#22"
 ai-use: "Claude Code wrote the code, notebooks and tests, ran every run through the Kaggle CLI and drafted the records and the Section B draft; Joseph directed the work, set up Kaggle, reviewed the draft and checked the numbers against the run files"
 ---
 
