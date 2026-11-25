@@ -18,3 +18,4 @@ Numbered decision records (ADRs). Never edit a decision away: write a new one an
 | [Use the public copy evie-8/afrispeech-200 because official access was not granted](0010-public-mirror-of-afrispeech.md) | Accepted | 2026-11-20 |
 | [torch and transformers for the transformer models](0011-torch-and-transformers.md) | Accepted | 2026-11-23 |
 | [Train on Kaggle's free T4 GPUs, with logs saved as proof](0012-kaggle-free-gpus.md) | Accepted | 2026-11-23 |
+| [The whole deck uses one analogy, a skilled nurse learning a new ward](0013-deck-analogy-nurse-learning-the-ward.md) | Proposed | 2026-11-25 |
