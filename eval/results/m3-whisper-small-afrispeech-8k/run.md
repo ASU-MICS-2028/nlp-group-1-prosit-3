@@ -14,7 +14,7 @@ ai-use: Claude started the run with the Kaggle command-line tool, downloaded the
 
 - **Kaggle notebook:** private, `josephetse/m3-whisper-small-afrispeech-8k` version 1. Pushed at 20:18 UTC on 2026-11-24; the session ran from about 20:19 to 01:54 UTC on 2026-11-25 (20,073 s, about 5.6 GPU hours, `kaggle-notebook-log.json`).
 - **Code:** commit `810230a` on `6-whisper`, notebook `models/whisper_full/kaggle_finetune.ipynb`.
-- **Command:** as the 4,000-step run (`eval/results/m3-whisper-small-afrispeech/run.md`) with `--name whisper-small-afrispeech-8k --steps 8000`. Started from the released weights, not from the 4k checkpoint, so the learning-rate decay spans all 8,000 steps.
+- **Command:** as the 4,000-step run (`eval/results/m3-whisper-small-afrispeech/run.md`) with `--name whisper-small-afrispeech-8k --steps 8000`, then `zero_shot checkpoints/whisper-small-afrispeech-8k/best --fallback` and `uv run python -m common.score` (`stdout-predict.log`, `stdout-score.log`). Started from the released weights, not from the 4k checkpoint, so the learning-rate decay spans all 8,000 steps.
 - **Time:** training 18,977 s (about 2.37 s per step); prediction of 1,000 clips 918 s.
 - **Dev WER** (200 clips, every 500 steps, `train.log`): 0.169 at step 4,000, 0.160 at 5,000, best **0.150 at 7,500**, 0.154 at 8,000. The step-7,500 checkpoint was used for the test set.
 
