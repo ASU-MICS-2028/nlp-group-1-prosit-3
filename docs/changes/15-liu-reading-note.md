@@ -2,7 +2,7 @@
 title: Reading note on Liu et al. 2024 (Whisper fine-tuning strategies for low-resource ASR)
 owner: Joseph Etse
 issue: "#15"
-pr: "#TBD"
+pr: "#21"
 ai-use: "Claude Code downloaded the paper and drafted the three notes from the PDF and Joseph's summary; Joseph read the paper and the notes"
 ---
 
